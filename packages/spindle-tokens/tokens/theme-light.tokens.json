@@ -22,11 +22,11 @@
     },
     "Surface/Accent Primary": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 70}"
+      "$value": "{Primitive Color.Brand/Sumzap Yellow}"
     },
     "Surface/Accent Primary Light": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 5}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 5}"
     },
     "Surface/Accent Secondary": {
       "$type": "color",
@@ -46,11 +46,11 @@
     },
     "Surface/Positive": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 70}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 70}"
     },
     "Surface/Positive Light": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 5}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 5}"
     },
     "Surface/Caution": {
       "$type": "color",
@@ -78,7 +78,7 @@
     },
     "Text/Accent Primary": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 80}"
+      "$value": "{Primitive Color.Brand/Sumzap Yellow}"
     },
     "Text/Accent Secondary": {
       "$type": "color",
@@ -94,7 +94,7 @@
     },
     "Text/Positive": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 80}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 80}"
     },
     "Text/Caution": {
       "$type": "color",
@@ -118,7 +118,7 @@
     },
     "Object/Accent Primary": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 70}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 70}"
     },
     "Object/Accent Secondary": {
       "$type": "color",
@@ -134,7 +134,7 @@
     },
     "Object/Positive": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 70}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 70}"
     },
     "Object/Caution": {
       "$type": "color",
@@ -166,7 +166,7 @@
     },
     "Border/Accent Primary": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 70}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 70}"
     },
     "Border/High Emphasis on Inverse": {
       "$type": "color",
@@ -200,9 +200,9 @@
       "$type": "color",
       "$value": "{Primitive Color.Focus/Focus Blue 100}"
     },
-    "Brand/Ameba Green": {
+    "Brand/Sumzap Yellow": {
       "$type": "color",
-      "$value": "{Primitive Color.Brand/Ameba Green}"
+      "$value": "{Primitive Color.Brand/Sumzap Yellow}"
     },
     "Third Party/Facebook Blue": {
       "$type": "color",
@@ -278,23 +278,27 @@
     },
     "Brand/Black": {
       "$type": "color",
-      "$value": "{Primitive Color.Brand/Ameba Black}"
+      "$value": "{Primitive Color.Brand/Sumzap Black}"
     },
     "Brand/White": {
       "$type": "color",
-      "$value": "{Primitive Color.Brand/Ameba White}"
+      "$value": "{Primitive Color.Brand/Sumzap White}"
     },
-    "Brand/Netural Gray": {
+    "Brand/Off White": {
       "$type": "color",
-      "$value": "{Primitive Color.Brand/Ameba Neutral Gray}"
+      "$value": "{Primitive Color.Brand/Sumzap Off White}"
     },
-    "Brand/Yellow Green": {
+    "Brand/Charcoal": {
       "$type": "color",
-      "$value": "{Primitive Color.Brand/Ameba Yellow Green}"
+      "$value": "{Primitive Color.Brand/Sumzap Charcoal}"
     },
-    "Brand/Yellow": {
+    "Brand/Cyan Blue": {
       "$type": "color",
-      "$value": "{Primitive Color.Brand/Ameba Yellow}"
+      "$value": "{Primitive Color.Brand/Sumzap Cyan Blue}"
+    },
+    "Brand/Purple": {
+      "$type": "color",
+      "$value": "{Primitive Color.Brand/Sumzap Purple}"
     },
     "Focus/Ambiguous": {
       "$type": "color",
@@ -322,11 +326,11 @@
     },
     "Hover/Contained Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 100}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 100}"
     },
     "Hover/Outlined Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 5}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 5}"
     },
     "Hover/Neutral Button": {
       "$type": "color",
@@ -334,7 +338,7 @@
     },
     "Hover/Lighted Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 10}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 10}"
     },
     "Hover/Danger Button": {
       "$type": "color",
@@ -342,11 +346,11 @@
     },
     "Active/Contained Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 100}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 100}"
     },
     "Active/Outlined Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 5}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 5}"
     },
     "Active/Neutral Button": {
       "$type": "color",
@@ -354,7 +358,7 @@
     },
     "Active/Lighted Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 10}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 10}"
     },
     "Active/Danger Button": {
       "$type": "color",
@@ -362,11 +366,11 @@
     },
     "Highlighted/Contained Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 100}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 100}"
     },
     "Highlighted/Outlined Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 5}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 5}"
     },
     "Highlighted/Neutral Button": {
       "$type": "color",
@@ -374,7 +378,7 @@
     },
     "Highlighted/Lighted Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 10}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 10}"
     },
     "Highlighted/Danger Button": {
       "$type": "color",
@@ -386,7 +390,7 @@
     },
     "Ripple/Outlined Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 5}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 5}"
     },
     "Ripple/Neutral Button": {
       "$type": "color",
@@ -394,7 +398,7 @@
     },
     "Ripple/Lighted Button": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Green/Primary Green 10}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 10}"
     },
     "Ripple/Danger Button": {
       "$type": "color",

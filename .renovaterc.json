@@ -1,10 +1,10 @@
 {
   "extends": [
-    "local>openameba/renovate-config:main.json5",
-    "local>openameba/renovate-config:npm.json5",
-    "local>openameba/renovate-config:npm-app.json5",
-    "local>openameba/renovate-config:npm-monorepo.json5",
-    "local>openameba/renovate-config:automerge-minor.json5"
+    "local>sumzap/renovate-config:main.json5",
+    "local>sumzap/renovate-config:npm.json5",
+    "local>sumzap/renovate-config:npm-app.json5",
+    "local>sumzap/renovate-config:npm-monorepo.json5",
+    "local>sumzap/renovate-config:automerge-minor.json5"
   ],
   "reviewers": ["team:spindle-working-group"],
   "packageRules": [

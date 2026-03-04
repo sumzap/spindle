@@ -81,7 +81,7 @@ Create a changeset file with a descriptive filename in `.changeset/` directory.
 **File content format:**
 ```markdown
 ---
-"@openameba/package-name": major|minor|patch
+"@sumzap/package-name": major|minor|patch
 ---
 
 Clear description of the change
@@ -90,7 +90,7 @@ Clear description of the change
 **Example for single package:**
 ```markdown
 ---
-"@openameba/spindle-ui": minor
+"@sumzap/spindle-ui": minor
 ---
 
 Add new Button variant for secondary actions
@@ -99,8 +99,8 @@ Add new Button variant for secondary actions
 **Example for multiple packages:**
 ```markdown
 ---
-"@openameba/spindle-ui": minor
-"@openameba/spindle-tokens": patch
+"@sumzap/spindle-ui": minor
+"@sumzap/spindle-tokens": patch
 ---
 
 - spindle-ui: Add new Button variant for secondary actions

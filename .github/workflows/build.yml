@@ -22,5 +22,5 @@ jobs:
       # Workaround: use positive filter to select packages from ./packages/* then exclude spindle-icons
       - name: build all packages
         run: |
-          pnpm --filter './packages/*' --filter '!@openameba/spindle-icons' -r build
+          pnpm --filter './packages/*' --filter '!@sumzap/spindle-icons' -r build
           pnpm build:extensionReplace

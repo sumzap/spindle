@@ -51,7 +51,7 @@
     "variables": {
       "VariableID:ff3755135e1b7dedf144aeaa44f05837dcd95aee/855:5": {
         "id": "VariableID:ff3755135e1b7dedf144aeaa44f05837dcd95aee/855:5",
-        "name": "Brand Color/Ameba Green",
+        "name": "Brand Color/Sumzap Black",
         "remote": true,
         "key": "ff3755135e1b7dedf144aeaa44f05837dcd95aee",
         "variableCollectionId": "VariableCollectionId:d3a4d44b718b21a8ff67eeb2aedbeaa6bbb048b4/855:1",
@@ -60,9 +60,9 @@
         "hiddenFromPublishing": true,
         "valuesByMode": {
           "855:0": {
-            "r": 0.1764705926179886,
-            "g": 0.5490196347236633,
-            "b": 0.23529411852359772,
+            "r": 0,
+            "g": 0,
+            "b": 0,
             "a": 1
           }
         },
@@ -73,7 +73,7 @@
       },
       "VariableID:fddbbfceda458dddb82751f92a53757f99831792/1079:0": {
         "id": "VariableID:fddbbfceda458dddb82751f92a53757f99831792/1079:0",
-        "name": "Brand Color/Ameba Black",
+        "name": "Brand Color/Sumzap Yellow",
         "remote": true,
         "key": "fddbbfceda458dddb82751f92a53757f99831792",
         "variableCollectionId": "VariableCollectionId:d3a4d44b718b21a8ff67eeb2aedbeaa6bbb048b4/855:1",
@@ -82,8 +82,8 @@
         "hiddenFromPublishing": true,
         "valuesByMode": {
           "855:0": {
-            "r": 0,
-            "g": 0,
+            "r": 1,
+            "g": 0.9450980392156862,
             "b": 0,
             "a": 1
           }

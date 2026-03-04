@@ -1,88 +1,76 @@
 {
   "Primitive Color": {
-    "Brand/Ameba Green": {
-      "$type": "color",
-      "$value": "#2d8c3c"
-    },
-    "Brand/Ameba Black": {
+    "Brand/Sumzap Black": {
       "$type": "color",
       "$value": "#000000"
     },
-    "Brand/Ameba White": {
+    "Brand/Sumzap Yellow": {
+      "$type": "color",
+      "$value": "#FFF100"
+    },
+    "Brand/Sumzap White": {
       "$type": "color",
       "$value": "#ffffff"
     },
-    "Brand/Ameba Neutral Gray": {
+    "Brand/Sumzap Off White": {
       "$type": "color",
-      "$value": "#f6f6f6"
+      "$value": "#F7F8F8"
     },
-    "Brand/Ameba Yellow Green": {
+    "Brand/Sumzap Charcoal": {
       "$type": "color",
-      "$value": "#82be28"
+      "$value": "#32373c"
     },
-    "Brand/Ameba Yellow": {
+    "Brand/Sumzap Cyan Blue": {
       "$type": "color",
-      "$value": "#f5e100"
+      "$value": "#0693e3"
     },
-    "Uranai Brand/Uranai Purple": {
+    "Brand/Sumzap Purple": {
       "$type": "color",
-      "$value": "#743faa"
+      "$value": "#9b51e0"
     },
-    "Uranai Brand/Uranai Navy Blue": {
+    "Primary Yellow/Primary Yellow 100": {
       "$type": "color",
-      "$value": "#391e66"
+      "$value": "#998F00"
     },
-    "Uranai Brand/Uranai White": {
+    "Primary Yellow/Primary Yellow 90": {
       "$type": "color",
-      "$value": "#ffffff"
+      "$value": "#B3A800"
     },
-    "Uranai Brand/Uranai Cream": {
+    "Primary Yellow/Primary Yellow 80": {
       "$type": "color",
-      "$value": "#fbf8f4"
+      "$value": "#CCBF00"
     },
-    "Primary Green/Primary Green 100": {
+    "Primary Yellow/Primary Yellow 70": {
       "$type": "color",
-      "$value": "#0f5c1f"
+      "$value": "#E5D800"
     },
-    "Primary Green/Primary Green 90": {
+    "Primary Yellow/Primary Yellow 60": {
       "$type": "color",
-      "$value": "#186b27"
+      "$value": "#F2E800"
     },
-    "Primary Green/Primary Green 80": {
+    "Primary Yellow/Primary Yellow 50": {
       "$type": "color",
-      "$value": "#237b31"
+      "$value": "#FFF100"
     },
-    "Primary Green/Primary Green 70": {
+    "Primary Yellow/Primary Yellow 40": {
       "$type": "color",
-      "$value": "#298737"
+      "$value": "#FFF433"
     },
-    "Primary Green/Primary Green 60": {
+    "Primary Yellow/Primary Yellow 30": {
       "$type": "color",
-      "$value": "#389e46"
+      "$value": "#FFF566"
     },
-    "Primary Green/Primary Green 50": {
+    "Primary Yellow/Primary Yellow 20": {
       "$type": "color",
-      "$value": "#41ad4f"
+      "$value": "#FFF899"
     },
-    "Primary Green/Primary Green 40": {
+    "Primary Yellow/Primary Yellow 10": {
       "$type": "color",
-      "$value": "#5eb969"
+      "$value": "#FFFBCC"
     },
-    "Primary Green/Primary Green 30": {
+    "Primary Yellow/Primary Yellow 5": {
       "$type": "color",
-      "$value": "#7bc583"
-    },
-    "Primary Green/Primary Green 20": {
-      "$type": "color",
-      "$value": "#a1d5a7"
-    },
-    "Primary Green/Primary Green 10": {
-      "$type": "color",
-      "$value": "#c6e5c9"
-    },
-    "Primary Green/Primary Green 5": {
-      "$type": "color",
-      "$value": "#e7f5e9"
+      "$value": "#FFFDE5"
     },
     "Seconrady Green/Secondary Green 100": {
       "$type": "color",

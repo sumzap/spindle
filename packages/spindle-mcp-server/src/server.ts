@@ -11,7 +11,7 @@ const VERSION = pkg.version;
 
 export function createServer(): McpServer {
   const server = new McpServer({
-    name: 'ameba-spindle',
+    name: 'sumzap-spindle',
     version: VERSION,
   });
 

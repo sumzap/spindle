@@ -66,17 +66,17 @@ import * as {{ inputs.name | pascal }}Stories from './{{ inputs.name | pascal }}
 
 <Source
   language='javascript'
-  code={`import { {{ inputs.name | pascal }} } from '@openameba/spindle-ui'`}
+  code={`import { {{ inputs.name | pascal }} } from '@sumzap/spindle-ui'`}
 />
 
 <Source
   language='css'
-  code={`@import './node_modules/@openameba/spindle-ui/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.css'`}
+  code={`@import './node_modules/@sumzap/spindle-ui/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.css'`}
 />
 
 <Source
   language='html'
-  code={`<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-ui/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.css">`}
+  code={`<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-ui/{{ inputs.name | pascal }}/{{ inputs.name | pascal }}.css">`}
 />
 
 ## Interface

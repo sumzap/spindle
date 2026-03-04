@@ -31,7 +31,7 @@ Amebaの開発での利用実績を踏まえ、以下の点を考慮してライ
 React Hooksは以下のように利用します。
 
 ```js
-import { useTimeDistance } from '@openameba/spindle-hooks';
+import { useTimeDistance } from '@sumzap/spindle-hooks';
 
 function WakuWakuTime() {
   const publishedAt = '2022-02-22T22:22:22.222Z';

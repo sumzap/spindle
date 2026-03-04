@@ -3,9 +3,9 @@
 ## Requirements
 
 - MCP (Model Context Protocol) is required when creating issues. Choose one of the following options:
-  - **Linear MCP** (for Ameba members with Linear account): [Linear MCP Setup](cursor://anysphere.cursor-deeplink/mcp/install?name=Linear&config=eyJ1cmwiOiJodHRwczovL21jcC5saW5lYXIuYXBwL3NzZSJ9)
-  - **GitHub MCP** (for non-Ameba members): [GitHub MCP Setup](cursor://anysphere.cursor-deeplink/mcp/install?name=GitHub&config=eyJjb21tYW5kIjoiZG9ja2VyIHJ1biAtaSAtLXJtIC1lIEdJVEhVQl9QRVJTT05BTF9BQ0NFU1NfVE9LRU4gZ2hjci5pby9naXRodWIvZ2l0aHViLW1jcC1zZXJ2ZXIiLCJlbnYiOnsiR0lUSFVCX1BFUlNPTkFMX0FDQ0VTU19UT0tFTiI6IiJ9fQ%3D%3D)
-- Target repository: `@openameba/spindle`
+  - **Linear MCP** (for Sumzap members with Linear account): [Linear MCP Setup](cursor://anysphere.cursor-deeplink/mcp/install?name=Linear&config=eyJ1cmwiOiJodHRwczovL21jcC5saW5lYXIuYXBwL3NzZSJ9)
+  - **GitHub MCP** (for non-Sumzap members): [GitHub MCP Setup](cursor://anysphere.cursor-deeplink/mcp/install?name=GitHub&config=eyJjb21tYW5kIjoiZG9ja2VyIHJ1biAtaSAtLXJtIC1lIEdJVEhVQl9QRVJTT05BTF9BQ0NFU1NfVE9LRU4gZ2hjci5pby9naXRodWIvZ2l0aHViLW1jcC1zZXJ2ZXIiLCJlbnYiOnsiR0lUSFVCX1BFUlNPTkFMX0FDQ0VTU19UT0tFTiI6IiJ9fQ%3D%3D)
+- Target repository: `@sumzap/spindle`
 - Required tools:
   - Linear MCP: `mcp_Linear_create_issue`
   - GitHub MCP: `mcp_GitHub_create_issue`
@@ -19,7 +19,7 @@
   - GitHub MCP
 - [ ] Verify the target workspace/repository:
   - Linear MCP: Spindle workspace
-  - GitHub MCP: `@openameba/spindle` repository
+  - GitHub MCP: `@sumzap/spindle` repository
 - [ ] Use appropriate MCP tool to create the issue:
   - Linear MCP: `mcp_Linear_create_issue`
   - GitHub MCP: `mcp_GitHub_create_issue`

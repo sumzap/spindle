@@ -1,17 +1,17 @@
 # Contributing to Spindle
 
-Spindleは、Amebaで利用するデザインシステムです。このリポジトリは、デザインシステムで定義された内容を実際に利用しやすいように実装に落とし込んだものです。
+Spindleは、Sumzapで利用するデザインシステムです。このリポジトリは、デザインシステムで定義された内容を実際に利用しやすいように実装に落とし込んだものです。
 
-Amebaとして提供される成果物は、それらに則って開発されることを推奨しています。そのため、機能の要望や修正のPull RequestはAmebaに在籍するメンバーからのみとしています(ごめんなさい🙇)。
+Sumzapとして提供される成果物は、それらに則って開発されることを推奨しています。そのため、機能の要望や修正のPull RequestはSumzapに在籍するメンバーからのみとしています(ごめんなさい🙇)。
 
 ただし、リンク先のミス、誤字・脱字などのPull Request、Issue提起は大歓迎です。わかりづらい点や疑問に思う箇所がありましたら、お気軽にお知らせください！
 
 ## Pull Requestの作り方
-1. `openameba/spindle`をCloneもしくはForkします
+1. `sumzap/spindle`をCloneもしくはForkします
 2. 作業ブランチを作成し、変更内容を反映します
 3. コミットメッセージは[Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/)に準拠します
     - コミットタイプを適切に設定します
-    - スコープは`spindle-icons`や`spindle-ui`など該当する[パッケージ名](https://github.com/openameba/spindle/tree/main/packages)があれば付与します
+    - スコープは`spindle-icons`や`spindle-ui`など該当する[パッケージ名](https://github.com/sumzap/spindle/tree/main/packages)があれば付与します
     - 破壊的変更がある場合は、`BREAKING CHANGE`を明記します
 4. Pull Requestを作成します
 5. changesetを作成します
@@ -20,7 +20,7 @@ Amebaとして提供される成果物は、それらに則って開発される
     - PR作成後、changesets-botがコメントで案内するので、それに従って追加することもできます
     - **changesetが不要な場合**: ドキュメント更新、README修正、CI/CD設定変更など、パッケージのリリースが不要な変更の場合は、changesetを追加せずにマージして構いません
 
-## リリースのやり方 (Ameba在籍メンバー向け)
+## リリースのやり方 (Sumzap在籍メンバー向け)
 1. Pull Requestを`main`ブランチにマージします
 2. mainにマージされると、GitHub Actionsが自動的に「chore: publish」というタイトルのPull Requestを作成します
     - このPRには各パッケージの`package.json`のバージョン更新と`CHANGELOG.md`の更新が含まれます

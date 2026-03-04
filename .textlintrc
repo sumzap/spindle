@@ -1,6 +1,5 @@
 {
   "rules": {
-    "preset-ameba": true
   },
   "plugins": {
     "@textlint/markdown": {

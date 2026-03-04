@@ -25,7 +25,7 @@ Amebaの開発での利用実績を踏まえ、以下の点を考慮してライ
 Reactコンポーネントは以下のように、利用します。
 
 ```JavaScript
-import { Button } from '@openameba/spindle-ui';
+import { Button } from '@sumzap/spindle-ui';
 
 export const WakuwakuForm = () => {
   return (

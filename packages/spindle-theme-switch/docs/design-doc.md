@@ -107,7 +107,7 @@ customElements.define(ELEMENT_NAME, SpindleThemeSwitch);
     }
   </style>
   <!-- type=moduleを指定してスクリプトを読み込みます -->
-  <script src="https://unpkg.com/@openameba/spindle-theme-switch/spindle-theme-switch.js" type="module"></script>
+  <script src="https://unpkg.com/@sumzap/spindle-theme-switch/spindle-theme-switch.js" type="module"></script>
 </head>
 
 <body>
@@ -144,7 +144,7 @@ declare namespace JSX {
 JSXでの利用時は以下のコメントを冒頭に挿入します。
 
 ```typescript
-/// <reference types="@openameba/spindle-theme-switch" />
+/// <reference types="@sumzap/spindle-theme-switch" />
 ```
 
 ## 他の手段

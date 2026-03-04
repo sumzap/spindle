@@ -1,17 +1,17 @@
 # Spindle Tokens
 
-Spindle (Ameba Design System) Design Tokens
+Spindle (Sumzap Design System) Design Tokens
 
 <p align="center">
   <img alt="Spindle TokensはFigmaのAPIを経由してStyle Dictionary形式のJSONを作成し、各アプリケーションに適した形式に変換します" src="./spindle-tokens.png" width="1200">
 </p>
 
-Spindle TokensはAmebaのデザインシステム「Spindle」で定義されたデザイントークンを管理します。デザイントークンは[DTCG (Design Tokens W3C Community Group)](https://www.w3.org/community/design-tokens/)フォーマットに準拠したJSON形式で管理され、[Style Dictionary](https://github.com/amzn/style-dictionary)により各アプリケーション向けの形式に変換されます。
+Spindle TokensはSumzapのデザインシステム「Spindle」で定義されたデザイントークンを管理します。デザイントークンは[DTCG (Design Tokens W3C Community Group)](https://www.w3.org/community/design-tokens/)フォーマットに準拠したJSON形式で管理され、[Style Dictionary](https://github.com/amzn/style-dictionary)により各アプリケーション向けの形式に変換されます。
 
 ## インストール
 
 ```bash
-npm install @openameba/spindle-tokens
+npm install @sumzap/spindle-tokens
 ```
 
 ## 使い方
@@ -21,24 +21,24 @@ npm install @openameba/spindle-tokens
 ### 基本的な読み込み
 
 ```css
-@import '@openameba/spindle-tokens/dist/css/spindle-tokens-animation.css';
-@import '@openameba/spindle-tokens/dist/css/spindle-tokens-font.css';
-@import '@openameba/spindle-tokens/dist/css/spindle-tokens-shadow.css';
-@import '@openameba/spindle-tokens/dist/css/view-transition.css';
+@import '@sumzap/spindle-tokens/dist/css/spindle-tokens-animation.css';
+@import '@sumzap/spindle-tokens/dist/css/spindle-tokens-font.css';
+@import '@sumzap/spindle-tokens/dist/css/spindle-tokens-shadow.css';
+@import '@sumzap/spindle-tokens/dist/css/view-transition.css';
 ```
 
 ```javascript
-import '@openameba/spindle-tokens/dist/css/spindle-tokens-animation.css';
-import '@openameba/spindle-tokens/dist/css/spindle-tokens-font.css';
-import '@openameba/spindle-tokens/dist/css/spindle-tokens-shadow.css';
-import '@openameba/spindle-tokens/dist/css/view-transition.css';
+import '@sumzap/spindle-tokens/dist/css/spindle-tokens-animation.css';
+import '@sumzap/spindle-tokens/dist/css/spindle-tokens-font.css';
+import '@sumzap/spindle-tokens/dist/css/spindle-tokens-shadow.css';
+import '@sumzap/spindle-tokens/dist/css/view-transition.css';
 ```
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-tokens/dist/css/spindle-tokens-animation.css">
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-tokens/dist/css/spindle-tokens-font.css">
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-tokens/dist/css/spindle-tokens-shadow.css">
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-tokens/dist/css/view-transition.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-tokens/dist/css/spindle-tokens-animation.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-tokens/dist/css/spindle-tokens-font.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-tokens/dist/css/spindle-tokens-shadow.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-tokens/dist/css/view-transition.css">
 ```
 
 ## View Transitionトークン
@@ -56,8 +56,8 @@ import '@openameba/spindle-tokens/dist/css/view-transition.css';
 
 ```css
 /* spindle-tokens-animation.cssの読み込みが必須 */
-@import '@openameba/spindle-tokens/dist/css/spindle-tokens-animation.css';
-@import '@openameba/spindle-tokens/dist/css/view-transition.css';
+@import '@sumzap/spindle-tokens/dist/css/spindle-tokens-animation.css';
+@import '@sumzap/spindle-tokens/dist/css/view-transition.css';
 ```
 
 ### カスタマイズ可能なトークン
@@ -103,14 +103,14 @@ Spacingトークンはデバイスサイズに応じて異なる値を持ちま�
 
 ```css
 /* Mobile向けの場合 */
-@import '@openameba/spindle-tokens/dist/css/spindle-tokens-spacing-mobile.css';
+@import '@sumzap/spindle-tokens/dist/css/spindle-tokens-spacing-mobile.css';
 ```
 
 ### レスポンシブ対応の場合
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-tokens/dist/css/spindle-tokens-spacing-mobile.css" media="(max-width: 767px)">
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-tokens/dist/css/spindle-tokens-spacing-tablet.css" media="(min-width: 768px) and (max-width: 1023px)">
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-tokens/dist/css/spindle-tokens-spacing-desktop.css" media="(min-width: 1024px)">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-tokens/dist/css/spindle-tokens-spacing-mobile.css" media="(max-width: 767px)">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-tokens/dist/css/spindle-tokens-spacing-tablet.css" media="(min-width: 768px) and (max-width: 1023px)">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-tokens/dist/css/spindle-tokens-spacing-desktop.css" media="(min-width: 1024px)">
 ```
 
 ## 開発方法

@@ -5,7 +5,7 @@
 - Point out if any tests or documentation related to the changes are missing, and provide suggestions when possible
 - Check accessibility implementation:
   - Refer to detailed checklists:
-    - `packages/spindle-mcp-server/src/accessibility.ts` (Ameba a11y guidelines checklist with URLs)
+    - `packages/spindle-mcp-server/src/accessibility.ts` (Sumzap a11y guidelines checklist with URLs)
     - Component-specific design-doc.md (e.g., `packages/spindle-ui/src/Form/Checkbox/design-doc.md`)
   - Key points to verify:
     - Semantic HTML and appropriate ARIA attributes
@@ -34,12 +34,10 @@ For ./packages/spindle-ui/ changes, review the following:
     - `.stories.tsx` (component examples)
     - `.mdx` (detailed docs)
     - `design-doc.md` (design documentation)
-    - `.figma.tsx` (Code Connect)
   - Tests cover updated functionality
   - Stories cover updated functionality (key component variants, props combinations, and use cases)
   - Documentation reflects current behavior
-  - Code Connect mapping is updated if component API changed
-- For new components, verify required files are created: index.ts, .tsx, .css, .test.tsx, .stories.tsx, .mdx, design-doc.md, .figma.tsx
+- For new components, verify required files are created: index.ts, .tsx, .css, .test.tsx, .stories.tsx, .mdx, design-doc.md
   - If files are missing, point out which files need to be created
   - If files exist but are incomplete, suggest content or ask user how to proceed
 - For components wrapping a single interactive element (button, input, a, etc.), verify `forwardRef` is implemented to allow ref access

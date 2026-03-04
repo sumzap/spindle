@@ -36,7 +36,7 @@ This command analyzes the current branch changes and creates an appropriate chan
    - File content format:
      ```markdown
      ---
-     "@openameba/package-name": major|minor|patch
+     "@sumzap/package-name": major|minor|patch
      ---
 
      Clear description of the change
@@ -44,7 +44,7 @@ This command analyzes the current branch changes and creates an appropriate chan
    - Example content:
      ```markdown
      ---
-     "@openameba/spindle-ui": minor
+     "@sumzap/spindle-ui": minor
      ---
 
      Add new Button variant for secondary actions
@@ -52,8 +52,8 @@ This command analyzes the current branch changes and creates an appropriate chan
    - For multiple packages:
      ```markdown
      ---
-     "@openameba/spindle-ui": minor
-     "@openameba/spindle-tokens": patch
+     "@sumzap/spindle-ui": minor
+     "@sumzap/spindle-tokens": patch
      ---
 
      - spindle-ui: Add new Button variant for secondary actions

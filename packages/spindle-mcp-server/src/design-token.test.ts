@@ -27,8 +27,8 @@ describe('Design token functions', () => {
 
       expect(result).toEqual(
         expect.objectContaining({
-          'ameba-green': expect.any(String),
-          'ameba-black': expect.any(String),
+          'color-brand-black': expect.any(String),
+          'color-brand-yellow': expect.any(String),
         }),
       );
     });

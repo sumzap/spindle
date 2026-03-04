@@ -1,23 +1,23 @@
 # Spindle Hooks
 
-Spindle (Ameba Design System) Hooks
+Spindle (Sumzap Design System) Hooks
 
 <p align="center">
   <img alt="Spindle" src="./docs/images/components.png" width="400">
 </p>
 
-![MIT licence](https://img.shields.io/npm/l/@openameba/spindle-hooks) ![npm](https://img.shields.io/npm/v/@openameba/spindle-hooks)
+![MIT licence](https://img.shields.io/npm/l/@sumzap/spindle-hooks) ![npm](https://img.shields.io/npm/v/@sumzap/spindle-hooks)
 
-Spindle Hooksは、Amebaのデザインシステム「Spindle」で定義されたコンポーネントの機能部分にフォーカスし、再利用可能なReact Hooksを提供するライブラリです。様々なタイプのプロジェクトに導入できるように設計されています。
+Spindle Hooksは、Sumzapのデザインシステム「Spindle」で定義されたコンポーネントの機能部分にフォーカスし、再利用可能なReact Hooksを提供するライブラリです。様々なタイプのプロジェクトに導入できるように設計されています。
 
 ## インストール
 
 ```
-npm install @openameba/spindle-hooks
+npm install @sumzap/spindle-hooks
 ```
 
 ```
-pnpm add @openameba/spindle-hooks
+pnpm add @sumzap/spindle-hooks
 ```
 
 ## 利用方法
@@ -27,7 +27,7 @@ Spindle Hooksは以下のように利用できます。
 ```js
 import { render } from 'react-dom';
 import ReactDOM from 'react-dom';
-import { useTimeDistance } from '@openameba/spindle-hooks';
+import { useTimeDistance } from '@sumzap/spindle-hooks';
 
 function App() {
   const publishedAt = '2022-03-11T01:15:51.237Z';
@@ -38,15 +38,15 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
-Spindle HooksはSpindle UIと同様にmodule版の配信もしています。利用する際には、[導入ガイド](https://github.com/openameba/spindle/pull/175)を参考にしてください(リンク先はspindle-uiなのでspindle-hooksに置き換えてください)。
+Spindle HooksはSpindle UIと同様にmodule版の配信もしています。利用する際には、[導入ガイド](https://github.com/sumzap/spindle/pull/175)を参考にしてください(リンク先はspindle-uiなのでspindle-hooksに置き換えてください)。
 
 ## Hooks 一覧
 
-利用可能なReact Hooksは、[Storybook](https://ameba-spindle-hooks.web.app/)で公開されています。
+利用可能なReact Hooksは、[Storybook](https://sumzap-spindle-hooks.web.app/)で公開されています。
 
 ## ブラウザサポート
 
-Spindle HooksはGoogle Chrome最新版で動作確認しています。それ以外のブラウザでは[Amebaの推奨環境](https://helps.ameba.jp/faq/others/5510/top_08.html)に基づき表示・動作に問題がある場合は対応していきます。
+Spindle HooksはGoogle Chrome最新版で動作確認しています。それ以外のブラウザでは[Sumzapの推奨環境](https://helps.ameba.jp/faq/others/5510/top_08.html)に基づき表示・動作に問題がある場合は対応していきます。
 
 ## 開発方法
 
