@@ -1,7 +1,8 @@
 name: deploy UI preview
 
 on:
-  - pull_request_target
+  workflow_dispatch:  # Firebase deploy disabled for sumzap fork - manual trigger only
+  # - pull_request_target
 
 jobs:
   check_paths:

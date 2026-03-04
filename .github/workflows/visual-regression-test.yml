@@ -1,13 +1,13 @@
 name: visual regression test
 
 on:
-  push:
-    branches:
-      - main
-  pull_request_target:
-    paths:
-      - 'packages/spindle-ui/**'
-  workflow_dispatch:
+  workflow_dispatch:  # Visual regression test disabled for sumzap fork - manual trigger only
+  # push:
+  #   branches:
+  #     - main
+  # pull_request_target:
+  #   paths:
+  #     - 'packages/spindle-ui/**'
 
 permissions:
   contents: read
@@ -40,10 +40,11 @@ jobs:
       - id: condition
         run: echo "result=${RESULT}" >> "$GITHUB_OUTPUT"
   visual_regression_test:
+    if: false  # Visual regression test disabled for sumzap fork (no GCS/reg-suit credentials)
     runs-on: ubuntu-latest
     timeout-minutes: 30
     needs: check_condition
-    if: needs.check_condition.outputs.result == 'true'
+    # if: needs.check_condition.outputs.result == 'true'
     steps:
       - run: sudo apt-get --yes update
       - run: sudo apt-get --yes install fonts-noto
