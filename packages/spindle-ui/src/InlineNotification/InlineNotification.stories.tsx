@@ -133,7 +133,7 @@ export const InlineNotificationwithAvatar: Story = {
     <InlineNotification.Frame variant="information" visible>
       <InlineNotification.Avatar src="/avatar.png" alt="" />
       <InlineNotification.Text>
-        Ameba運営局よりメッセージが届きました
+        Sumzap運営局よりメッセージが届きました
       </InlineNotification.Text>
     </InlineNotification.Frame>
   ),

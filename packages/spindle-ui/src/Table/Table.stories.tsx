@@ -570,7 +570,7 @@ export const LongText: Story = {
             https://example.com/very/long/path/to/some/resource/that/might/break/layout
           </Table.Cell>
           <Table.Cell>
-            https://github.com/openameba/spindle/tree/main/packages/spindle-ui/src/Table
+            https://github.com/sumzap/spindle/tree/main/packages/spindle-ui/src/Table
           </Table.Cell>
         </Table.Row>
       </Table.Body>

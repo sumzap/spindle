@@ -7,7 +7,7 @@ async function main() {
   const server = createServer();
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error('Spindle MCP Server running on stdio');
+  console.error('Sumzap Spindle MCP Server running on stdio');
 }
 
 main().catch((error) => {

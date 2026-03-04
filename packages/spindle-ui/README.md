@@ -1,22 +1,22 @@
 # Spindle UI
 
-Spindle (Ameba Design System) UI Components
+Spindle (Sumzap Design System) UI Components
 
 <p align="center">
   <img alt="Spindle" src="./docs/images/components.png" width="400">
 </p>
 
-![MIT license](https://img.shields.io/npm/l/@openameba/spindle-ui) ![npm](https://img.shields.io/npm/v/@openameba/spindle-ui)
+![MIT license](https://img.shields.io/npm/l/@sumzap/spindle-ui) ![npm](https://img.shields.io/npm/v/@sumzap/spindle-ui)
 
 
-Spindle UIは、Amebaのデザインシステム「Spindle」で定義されたコンポーネントを配布するライブラリです。様々なタイプのプロジェクトに導入できるように設計されています。
+Spindle UIは、Sumzapのデザインシステム「Spindle」で定義されたコンポーネントを配布するライブラリです。様々なタイプのプロジェクトに導入できるように設計されています。
 
 ## インストール
 ```
-npm install @openameba/spindle-ui
+npm install @sumzap/spindle-ui
 ```
 ```
-pnpm add @openameba/spindle-ui
+pnpm add @sumzap/spindle-ui
 ```
 
 ## 利用方法
@@ -26,12 +26,12 @@ Spindle UIは以下のように利用できます。
 ```JavaScript
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button } from '@openameba/spindle-ui';
+import { Button } from '@sumzap/spindle-ui';
 // Tree Shakingされない環境下では個別にインポートすることを推奨します
-// 例）`import { Button } from '@openameba/spindle-ui/Button';`
+// 例）`import { Button } from '@sumzap/spindle-ui/Button';`
 
 // コンポーネントを利用する際には対応するCSSも読み込みます
-import '@openameba/spindle-ui/Button/Button.css';
+import '@sumzap/spindle-ui/Button/Button.css';
 
 function App() {
   return <Button size="large" variant="contained">Spindle</Button>;
@@ -40,14 +40,14 @@ function App() {
 ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
-Spindle UIはmodule版の配信もしています。利用する際には、[導入ガイド](https://github.com/openameba/spindle/pull/175)を参考にしてください。
+Spindle UIはmodule版の配信もしています。利用する際には、[導入ガイド](https://github.com/sumzap/spindle/pull/175)を参考にしてください。
 
 さらなる詳細は[コンポーネント一覧](#コンポーネント一覧)を参照してください。
 
 > **_NOTE:_**  アイコン利用時は[Spindle IconsのReactコンポーネント](/packages/spindle-icons#react)を読み、注意点を確認してください。
 
 ## コンポーネント一覧
-利用可能なコンポーネントは、[Storybook](https://ameba-spindle.web.app/)で公開されています。各コンポーネントの開発状況は[Spindleサイトのコンポーネントステータスページ](https://spindle.ameba.design/components/status/)をご覧ください。
+利用可能なコンポーネントは、[Storybook](https://sumzap-spindle.web.app/)で公開されています。各コンポーネントの開発状況は[Spindleサイトのコンポーネントステータスページ](https://spindle.sumzap.design/components/status/)をご覧ください。
 
 ## スタイリング
 Spindle UIのスタイルは、名前空間(`spui`)をもったCSSとして定義されています。これはスタイルを利用時に再定義する必要がないほか、コンポーネント志向のアプリケーションだけでなく、HTMLを中心としたWebページでも利用可能にするためです。
@@ -65,21 +65,21 @@ Spindle UIのスタイルは、名前空間(`spui`)をもったCSSとして定�
 ```HTML
 <!-- Spindle UIで用意されている全てのスタイルを読み込む場合 -->
 <!-- 常に最新のスタイルを読み込む場合。ただしリダイレクトされるため遅延します -->
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-ui/index.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-ui/index.css">
 <!-- バージョンを指定して読み込む場合。リダイレクトされないのでレスポンスが少し早いです -->
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-ui@1.0.0/index.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-ui@1.0.0/index.css">
 
 <!-- コンポーネント毎にスタイルを読み込む場合 -->
 <!-- 常に最新のスタイルを読み込む場合。ただしリダイレクトされるため遅延します -->
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-ui/Button/Button.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-ui/Button/Button.css">
 <!-- バージョンを指定して読み込む場合。リダイレクトされないのでレスポンスが少し早いです -->
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-ui@1.0.0/Button/Button.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-ui@1.0.0/Button/Button.css">
 ```
 
 ただし、CSSファイルサイズやファイル数が不必要に大きくなり、CDNサーバが遅延の原因になる可能性があるため**本番Webアプリケーションでの利用は推奨していません**。
 
 ## ブラウザサポート
-Spindle UIはGoogle Chrome最新版で動作確認しています。それ以外のブラウザでは[Amebaの推奨環境](https://helps.ameba.jp/faq/others/5510/top_08.html)に基づき表示・動作に問題がある場合は対応していきます。
+Spindle UIはGoogle Chrome最新版で動作確認しています。それ以外のブラウザでは[Sumzapの推奨環境](https://helps.ameba.jp/faq/others/5510/top_08.html)に基づき表示・動作に問題がある場合は対応していきます。
 
 ## 開発方法
 
@@ -88,7 +88,7 @@ pnpm install --frozen-lockfile
 pnpm dev # storybookが起動します
 ```
 
-NOTE: 事前に [spindle-hooks](https://github.com/openameba/spindle/tree/main/packages/spindle-hooks) を以下のようにbuildしておく必要があります。
+NOTE: 事前に [spindle-hooks](https://github.com/sumzap/spindle/tree/main/packages/spindle-hooks) を以下のようにbuildしておく必要があります。
 
 ```
 cd ../spindle-hooks
@@ -133,7 +133,7 @@ pnpm generate
 ## 開発ガイドライン
 
 ### アニメーション
-Spindleでは、[Amebaらしさ](https://spindle.ameba.design/principles/design/)を表現するためにできる限りアニメーションを付与したいと考えています。ただしプラットフォームでの実装難易度による開発コスト(短期的には開発時間、中長期的には変更のしにくさ、テストのしにくさ、予期せぬ問題の発生)を考慮し、アニメーション対応のガイドラインを作成しました。アニメーションを付与する際には以下のフローにそって判断してください。わからない場合には都度開発メンバーにヒアリングしてください。
+Spindleでは、[Sumzapらしさ](https://spindle.sumzap.design/principles/design/)を表現するためにできる限りアニメーションを付与したいと考えています。ただしプラットフォームでの実装難易度による開発コスト(短期的には開発時間、中長期的には変更のしにくさ、テストのしにくさ、予期せぬ問題の発生)を考慮し、アニメーション対応のガイドラインを作成しました。アニメーションを付与する際には以下のフローにそって判断してください。わからない場合には都度開発メンバーにヒアリングしてください。
 
 - 機能的にアニメーションが必須な場合 (1)
   - まず標準的な方法で実装します。それが難しい場合にはハック的な方法を使って実装します (1.1)
@@ -142,7 +142,7 @@ Spindleでは、[Amebaらしさ](https://spindle.ameba.design/principles/design/
   - ハック的な方法が必要な場合は、アニメーション実装をしません (2.2)
 
 ## ライセンス
-Spindle UIはMITライセンスで公開されています。ただし、アイコンは[Spindle Icons](https://github.com/openameba/spindle/tree/main/packages/spindle-icons#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9)に準じて、Creative Commons BY-NC-ND 4.0ライセンスで公開されています。
+Spindle UIはMITライセンスで公開されています。ただし、アイコンは[Spindle Icons](https://github.com/sumzap/spindle/tree/main/packages/spindle-icons#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9)に準じて、Creative Commons BY-NC-ND 4.0ライセンスで公開されています。
 
 ## 関連ドキュメント
 - [Design Doc](docs/design-doc.md)

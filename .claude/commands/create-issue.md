@@ -9,9 +9,9 @@ allowed-tools: mcp__linear-server__*, mcp__github__*
 ## Requirements
 
 - MCP (Model Context Protocol) is required when creating issues. Choose one of the following options:
-  - **Linear MCP** (for Ameba members with Linear account): `claude mcp add --transport sse linear-server https://mcp.linear.app/sse`
-  - **GitHub MCP** (for non-Ameba members): `claude mcp add --transport http github https://api.githubcopilot.com/mcp -H "Authorization: Bearer YOUR_GITHUB_PAT"`
-- Target repository: `@openameba/spindle`
+  - **Linear MCP** (for Sumzap members with Linear account): `claude mcp add --transport sse linear-server https://mcp.linear.app/sse`
+  - **GitHub MCP** (for non-Sumzap members): `claude mcp add --transport http github https://api.githubcopilot.com/mcp -H "Authorization: Bearer YOUR_GITHUB_PAT"`
+- Target repository: `@sumzap/spindle`
 - Required tools:
   - Linear MCP: `mcp_Linear_create_issue`
   - GitHub MCP: `mcp_GitHub_create_issue`
@@ -25,7 +25,7 @@ allowed-tools: mcp__linear-server__*, mcp__github__*
   - GitHub MCP
 - [ ] Verify the target workspace/repository:
   - Linear MCP: Spindle workspace
-  - GitHub MCP: `@openameba/spindle` repository
+  - GitHub MCP: `@sumzap/spindle` repository
 - [ ] Use appropriate MCP tool to create the issue:
   - Linear MCP: `mcp_Linear_create_issue`
   - GitHub MCP: `mcp_GitHub_create_issue`

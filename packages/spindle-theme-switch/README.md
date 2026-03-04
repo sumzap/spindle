@@ -8,9 +8,9 @@
 
 `<spindle-theme-switch>`の利用例は以下のサイトで確認できます。
 
-- [Spindleサイト](https://spindle.ameba.design/)
-- [Ameba Accessibility Guidelines](https://a11y-guidelines.ameba.design/)
-- [Spindle Theme Switch Example](https://ameba-spindle-theme-switch.web.app/)
+- [Spindleサイト](https://spindle.sumzap.design/)
+- [Sumzap Accessibility Guidelines](https://a11y-guidelines.sumzap.design/)
+- [Spindle Theme Switch Example](https://sumzap-spindle-theme-switch.web.app/)
 - [blog.keiya01.dev](https://blog.keiya01.dev/) (拡張例は[Pull Request](https://github.com/keiya01/keiya01.dev/pull/7)で確認できます)
 
 ## Usage
@@ -39,7 +39,7 @@
     }
   </style>
   <!-- type=moduleを指定してスクリプトを読み込みます -->
-  <script src="https://unpkg.com/@openameba/spindle-theme-switch/dist/spindle-theme-switch.js" type="module"></script>
+  <script src="https://unpkg.com/@sumzap/spindle-theme-switch/dist/spindle-theme-switch.js" type="module"></script>
 </head>
 
 <body>
@@ -61,7 +61,7 @@ NOTE:「スイッチなのになぜ`appearance=switch`を指定するの？」�
 `<spindle-theme-switch>`を拡張する場合には以下のようにして、定義された型を利用できます。
 
 ```typescript
-import { SpindleThemeSwitch } from '@openameba/spindle-theme-switch';
+import { SpindleThemeSwitch } from '@sumzap/spindle-theme-switch';
 
 class CustomizedSwitch extends SpindleThemeSwitch {
   constructor() {
@@ -75,7 +75,7 @@ const switchEl = document.querySelector<SpindleThemeSwitch>('spindle-theme-switc
 また、ReactをTypeScriptで記述する場合には以下のようにファイルの冒頭で参照を指定すると、JSXで利用できます。
 
 ```typescript
-/// <reference types="@openameba/spindle-theme-switch" />
+/// <reference types="@sumzap/spindle-theme-switch" />
 ```
 
 ## License

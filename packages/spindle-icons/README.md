@@ -1,29 +1,29 @@
 # Spindle Icons
 
-SVG and PDF Icons with Spindle (Ameba Design System)
+SVG and PDF Icons with Spindle (Sumzap Design System)
 
-![See license in readme.md](https://img.shields.io/npm/l/@openameba/spindle-icons) ![npm](https://img.shields.io/npm/v/@openameba/spindle-icons)
+![See license in readme.md](https://img.shields.io/npm/l/@sumzap/spindle-icons) ![npm](https://img.shields.io/npm/v/@sumzap/spindle-icons)
 
 ## インストール
 
-アイコンを画像ファイルとして利用したい場合には、`@openameba/spindle-icons` をインストールしてください。
+アイコンを画像ファイルとして利用したい場合には、`@sumzap/spindle-icons` をインストールしてください。
 
 ```
-npm install @openameba/spindle-icons
-```
-
-```
-pnpm add @openameba/spindle-icons
-```
-
-アイコンをReactコンポーネントとして利用したい場合には、`@openameba/spindle-ui` をインストールしてください。
-
-```
-npm install @openameba/spindle-ui
+npm install @sumzap/spindle-icons
 ```
 
 ```
-pnpm add @openameba/spindle-ui
+pnpm add @sumzap/spindle-icons
+```
+
+アイコンをReactコンポーネントとして利用したい場合には、`@sumzap/spindle-ui` をインストールしてください。
+
+```
+npm install @sumzap/spindle-ui
+```
+
+```
+pnpm add @sumzap/spindle-ui
 ```
 
 ## 利用方法
@@ -36,7 +36,7 @@ Spindle Iconsで生成されたSVGアイコンは、以下の方法で利用で�
 
 ```html
 <button>
-  <img alt="時間設定" height="50" role="img" src="https://unpkg.com/@openameba/spindle-icons/dist/svg/clock.svg" width="50">
+  <img alt="時間設定" height="50" role="img" src="https://unpkg.com/@sumzap/spindle-icons/dist/svg/clock.svg" width="50">
 </button>
 ```
 
@@ -100,7 +100,7 @@ SVGを装飾として利用する場合には、テキストと同時に利用�
 # 必要なアイコンのみでSVG Spriteを生成する例
 # 各オプションはそれぞれのプロジェクトに合わせて設定します
 
-npx svg-sprite --symbol --symbol-dest=. --symbol-sprite=sprite.svg  --shape-transform-svgo sprite.svgo.json --dest=＄PATH_TO_SVG 'node_modules/@openameba/spindle-icons/dist/+(check|exclamationmark).svg'
+npx svg-sprite --symbol --symbol-dest=. --symbol-sprite=sprite.svg  --shape-transform-svgo sprite.svgo.json --dest=＄PATH_TO_SVG 'node_modules/@sumzap/spindle-icons/dist/+(check|exclamationmark).svg'
 
 # sprite.svgo.jsonの例
 # SVG各ファイルに付与されている無駄なfillを消したい場合に設定します
@@ -131,7 +131,7 @@ npx svg-sprite --symbol --symbol-dest=. --symbol-sprite=sprite.svg  --shape-tran
 Spindle IconsはReactコンポーネントとして利用できます。利用する際には、[Inline SVG](#inline-svg)と同様に、適切なラベリングを忘れないように注意してください。
 
 ```JavaScript
-import Clock from '@openameba/spindle-ui/Icon/Clock';
+import Clock from '@sumzap/spindle-ui/Icon/Clock';
 
 export function SomeButton() {
   return <button aria-label="時間設定" type="button"><Clock /></button>
@@ -141,7 +141,7 @@ export function SomeButton() {
 ただし、アイコンが装飾として利用される場合には`aria-hidden=true`を指定します。
 
 ```JavaScript
-import Clock from '@openameba/spindle-ui/Icon/Clock';
+import Clock from '@sumzap/spindle-ui/Icon/Clock';
 
 export function SomeButton() {
   return <button type="button"><Clock aria-hidden="true" />時間設定</button>

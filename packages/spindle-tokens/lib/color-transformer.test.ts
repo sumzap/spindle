@@ -12,8 +12,8 @@ describe('transform color', () => {
     const transformedProperties = transformPrimitiveColor(variables);
 
     expect(transformedProperties).toEqual({
-      'Brand Color/Ameba Green': { $type: 'color', $value: '#2d8c3c' },
-      'Brand Color/Ameba Black': { $type: 'color', $value: '#000000' },
+      'Brand Color/Sumzap Black': { $type: 'color', $value: '#000000' },
+      'Brand Color/Sumzap Yellow': { $type: 'color', $value: '#fff100' },
     });
   });
 

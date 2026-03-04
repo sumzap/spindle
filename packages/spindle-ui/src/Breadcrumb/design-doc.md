@@ -109,7 +109,7 @@ type Props {
 
 ```tsx
 import React, { forwardRef } from 'react';
-import ChevronRightBold from "@openameba/spindle-ui/Icon/ChevronRightBold";
+import ChevronRightBold from "@sumzap/spindle-ui/Icon/ChevronRightBold";
 
 // classNameは受け取れる予定
 interface ItemProps

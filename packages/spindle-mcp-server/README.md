@@ -1,6 +1,6 @@
 # Spindle MCP Server
 
-AmebaデザインシステムSpindleに関するデータを[Model Context Protocol(MCP)](https://modelcontextprotocol.io/introduction)を通じて提供します。
+SumzapデザインシステムSpindleに関するデータを[Model Context Protocol(MCP)](https://modelcontextprotocol.io/introduction)を通じて提供します。
 
 ## MCPサーバーの設定
 
@@ -13,13 +13,13 @@ MCPクライアントの設定をします。SpindleのMCPサーバーを利用�
 #### npxを使用する場合（推奨）
 
 ```bash
-claude mcp add ameba-spindle -- npx -y @openameba/spindle-mcp-server@latest
+claude mcp add sumzap-spindle -- npx -y @sumzap/spindle-mcp-server@latest
 ```
 
 設定が正しく追加されたか、以下のコマンドで確認します。
 
 ```bash
-claude mcp get ameba-spindle
+claude mcp get sumzap-spindle
 ```
 
 ### Cursorでの設定
@@ -31,11 +31,11 @@ claude mcp get ameba-spindle
 ```json
 {
   "mcpServers": {
-    "ameba-spindle": {
+    "sumzap-spindle": {
       "command": "npx",
       "args": [
         "-y",
-        "@openameba/spindle-mcp-server@latest"
+        "@sumzap/spindle-mcp-server@latest"
       ]
     }
   }
@@ -54,18 +54,18 @@ SpindleのMCPサーバーでは以下の機能が提供されています。
 - `get_design_token`: 指定した種類のデザイントークン(CSS)を取得します。
 - `get_icons`: アイコンの一覧を取得します。
 - `get_icon_info`: 指定したアイコンの詳細情報を取得します。アイコンを利用する際にはこのツールが呼び出される必要があります。LLMが自動的に呼び出さない場合は、明示的に呼び出してください
-- `get_accessibility_docs`: Spindleコンポーネントを作成する際に使うアクセシビリティチェックリストを取得します。チェックリストは[Ameba Accessibility Guidelines](https://a11y-guidelines.ameba.design/)をもとに作成されています
+- `get_accessibility_docs`: Spindleコンポーネントを作成する際に使うアクセシビリティチェックリストを取得します。チェックリストは[Sumzap Accessibility Guidelines](https://a11y-guidelines.ameba.design/)をもとに作成されています
 - `get_component_design_doc_templete`: Spindleコンポーネントを作成する際のDesign Docテンプレートを取得します
 
 ### ユースケース
 
 SpindleのMCPサーバーは以下のような利用法が想定されています。
 
-- 「Ameba Spindleで使えるコンポーネントを教えて」
+- 「Sumzap Spindleで使えるコンポーネントを教えて」
 - 「Spindleで、Dialogコンポーネントは実装されていますか」
 - 「デザイントークンにはどんな種類がありますか」
 - 「この実装をSpindleに書き換えて」
-- 「(Figmaやスクリーンショットを添えて)できる限りAmeba Spindleを使って実装して」
+- 「(Figmaやスクリーンショットを添えて)できる限りSumzap Spindleを使って実装して」
 - 「(Figmaやスクリーンショットを添えて)コンポーネントのDesign Docを作成して」
 
 ## 利用にあたる注意点
@@ -100,7 +100,7 @@ pnpm build
 ```
 {
   "mcpServers": {
-    "ameba-spindle": {
+    "sumzap-spindle": {
       "command": "node",
       "args": [
         "/PATH_TO_PACKAGE/spindle/packages/spindle-mcp-server/dist/index.js"

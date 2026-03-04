@@ -22,7 +22,7 @@ export const Large: Story = {
     <TextField
       {...args}
       id="TextField"
-      placeholder="ameba-blog"
+      placeholder="sumzap-game"
       variant="large"
     />
   ),
@@ -32,7 +32,7 @@ export const LargeWithError: Story = {
   render: (args) => (
     <TextField
       {...args}
-      placeholder="ameba-blog"
+      placeholder="sumzap-game"
       hasError
       id="TextFieldWithError"
       variant="large"
@@ -44,7 +44,7 @@ export const Medium: Story = {
   render: (args) => (
     <TextField
       {...args}
-      placeholder="ameba-blog"
+      placeholder="sumzap-game"
       id="TextField"
       variant="medium"
     />
@@ -55,7 +55,7 @@ export const MediumWithError: Story = {
   render: (args) => (
     <TextField
       {...args}
-      placeholder="ameba-blog"
+      placeholder="sumzap-game"
       hasError
       id="TextFieldWithError"
       variant="medium"

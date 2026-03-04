@@ -2,7 +2,7 @@
 
 Spindle Syntax Themesは、Spindleで定義された色を利用したコードシンタックステーマ(CSS)です。LightテーマとDarkテーマが用意されており、どちらも背景色とテキスト色のコントラスト比を担保するように作成されています。
 
-実際のコードに適用されたスタイルは、[サンプルページ](https://ameba-spindle-syntax.web.app/)で閲覧できます。
+実際のコードに適用されたスタイルは、[サンプルページ](https://sumzap-spindle-syntax.web.app/)で閲覧できます。
 
 ## テーマ
 
@@ -17,30 +17,30 @@ Spindle Syntax Themesを利用するには、npm経由で読み込む(推奨)も
 
 ## npm or pnpm
 ```
-npm install @openameba/spindle-syntax-themes
+npm install @sumzap/spindle-syntax-themes
 ```
 
 ```
-pnpm add @openameba/spindle-syntax-themes
+pnpm add @sumzap/spindle-syntax-themes
 ```
 
 インストールしたCSSは、SassやPostCSSなどで読み込んで利用します。
 
 ```css
-@import '@openameba/spindle-syntax-themes/highlightjs-light.css'
+@import '@sumzap/spindle-syntax-themes/highlightjs-light.css'
 ```
 
 ```css
-@import '@openameba/spindle-syntax-themes/highlightjs-dark.css'
+@import '@sumzap/spindle-syntax-themes/highlightjs-dark.css'
 ```
 
 ## CDN
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-syntax-themes@0.1.0/highlightjs-light.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-syntax-themes@0.1.0/highlightjs-light.min.css">
 ```
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@openameba/spindle-syntax-themes@0.1.0/highlightjs-dark.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-syntax-themes@0.1.0/highlightjs-dark.min.css">
 ```
 
 HTMLからCDNを経由して直接読み込みます。CDNの配信のため、サイトの表示速度に影響を及ぼす可能性があります。

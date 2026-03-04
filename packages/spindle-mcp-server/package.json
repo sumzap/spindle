@@ -1,7 +1,7 @@
 {
-  "name": "@openameba/spindle-mcp-server",
+  "name": "@sumzap/spindle-mcp-server",
   "version": "1.5.2",
-  "description": "MCP server for Ameba Design System Spindle",
+  "description": "MCP server for Sumzap Design System Spindle",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,12 +25,12 @@
     "mcp",
     "model-context-protocol",
     "design-system",
-    "ameba",
+    "sumzap",
     "spindle"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/openameba/spindle",
+    "url": "https://github.com/sumzap/spindle",
     "directory": "packages/spindle-mcp-server"
   },
   "publishConfig": {
@@ -43,8 +43,8 @@
   },
   "devDependencies": {
     "@cfworker/json-schema": "4.1.1",
-    "@openameba/spindle-tokens": "workspace:*",
-    "@openameba/spindle-ui": "workspace:*",
+    "@sumzap/spindle-tokens": "workspace:*",
+    "@sumzap/spindle-ui": "workspace:*",
     "@types/node": "24.11.0",
     "cpx2": "8.0.0",
     "vitest": "4.0.18"

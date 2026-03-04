@@ -48,7 +48,7 @@ jobs:
         run: |
           cat > .changeset/auto-mcp-sync-$(date +%s).md << 'EOF'
           ---
-          "@openameba/spindle-mcp-server": patch
+          "@sumzap/spindle-mcp-server": patch
           ---
 
           chore(spindle-mcp-server): sync with spindle-ui/spindle-tokens update

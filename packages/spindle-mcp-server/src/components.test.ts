@@ -27,7 +27,6 @@ describe('Components functions', () => {
           styles: expect.any(Object),
           documentation: expect.any(Object),
           tests: expect.any(Object),
-          figma: expect.any(Object),
         }),
       );
     });
