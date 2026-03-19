@@ -10,11 +10,30 @@ MCPクライアントの設定をします。SpindleのMCPサーバーを利用�
 
 [Claude Code CLI](https://github.com/anthropics/claude-code)を使用する場合は、以下のコマンドで設定します。
 
-#### npxを使用する場合（推奨）
+#### npxを使用する場合（npmに公開済みの場合）
 
 ```bash
 claude mcp add sumzap-spindle -- npx -y @sumzap/spindle-mcp-server@latest
 ```
+
+#### ローカルビルドを使用する場合
+
+npmに未公開の場合は、リポジトリをクローンしてビルドしたものを使用します。
+
+```bash
+git clone https://github.com/sumzap/spindle.git
+cd spindle
+pnpm install --frozen-lockfile
+pnpm build
+```
+
+```bash
+claude mcp add sumzap-spindle -- node /path/to/spindle/packages/spindle-mcp-server/dist/index.js
+```
+
+> **Note**: `/path/to/spindle` はクローンしたリポジトリの絶対パスに置き換えてください。`spindle-ui` や `spindle-tokens` が更新された場合は、再度 `pnpm build` を実行してください。
+
+#### 設定の確認
 
 設定が正しく追加されたか、以下のコマンドで確認します。
 
@@ -26,7 +45,7 @@ claude mcp get sumzap-spindle
 
 [Cursor](https://www.cursor.com/)を使用する場合は、設定ファイルに以下を追加します。
 
-#### npxを使用する場合（推奨）
+#### Cursorでnpxを使用する場合（npmに公開済みの場合）
 
 ```json
 {
@@ -36,6 +55,23 @@ claude mcp get sumzap-spindle
       "args": [
         "-y",
         "@sumzap/spindle-mcp-server@latest"
+      ]
+    }
+  }
+}
+```
+
+#### Cursorでローカルビルドを使用する場合
+
+npmに未公開の場合は、上記「ローカルビルドを使用する場合」の手順でビルドした上で、以下を設定します。`/path/to/spindle` はクローンしたリポジトリの絶対パスに置き換えてください。
+
+```json
+{
+  "mcpServers": {
+    "sumzap-spindle": {
+      "command": "node",
+      "args": [
+        "/path/to/spindle/packages/spindle-mcp-server/dist/index.js"
       ]
     }
   }
