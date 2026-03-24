@@ -24,14 +24,14 @@ npmに未公開の場合は、リポジトリをクローンしてビルドし�
 git clone https://github.com/sumzap/spindle.git
 cd spindle
 pnpm install --frozen-lockfile
-pnpm build
+pnpm -r --filter @sumzap/spindle-mcp-server... build
 ```
 
 ```bash
 claude mcp add sumzap-spindle -- node /path/to/spindle/packages/spindle-mcp-server/dist/index.js
 ```
 
-> **Note**: `/path/to/spindle` はクローンしたリポジトリの絶対パスに置き換えてください。`spindle-ui` や `spindle-tokens` が更新された場合は、再度 `pnpm build` を実行してください。
+> **Note**: `/path/to/spindle` はクローンしたリポジトリの絶対パスに置き換えてください。`spindle-ui` や `spindle-tokens` が更新された場合は、再度ビルドコマンドを実行してください。`pnpm build` を使うと `spindle-icons` が Figma API へのアクセスを試みて `FIGMA_TOKEN` エラーになるため、上記のフィルター付きコマンドを使用してください。
 
 #### 設定の確認
 
@@ -125,11 +125,13 @@ SpindleのMCPサーバーの開発には以下の手順が必要です。
 pnpm install --frozen-lockfile
 ```
 
-2. ビルド
+2. ビルド（MCPサーバーとその依存パッケージのみ）
 
 ```bash
-pnpm build
+pnpm -r --filter @sumzap/spindle-mcp-server... build
 ```
+
+> `pnpm build` で全パッケージをビルドすると、`spindle-icons` が `FIGMA_TOKEN` を要求してエラーになります。
 
 3. 生成されたファイルを利用して動作確認
 
