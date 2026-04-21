@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.10.1
+
+### Patch Changes
+
+- [#16](https://github.com/sumzap/spindle/pull/16) [`d118107`](https://github.com/sumzap/spindle/commit/d1181075f4989dc90f234740bdb5863b22a27913) Thanks [@shiiman](https://github.com/shiiman)! - fix(spindle-tokens): accent secondaryカラートークンをsecondary-greenからyellowに修正
+
 ## 1.10.0
 
 ### Minor Changes
