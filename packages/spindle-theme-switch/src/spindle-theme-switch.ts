@@ -157,7 +157,7 @@ export class SpindleThemeSwitch extends DarkModeToggle {
       ?.querySelector('[part=darkRadio]')
       ?.setAttribute('aria-label', 'ダークテーマ');
 
-    // ameba-color-palette.css gets mode from this dataset
+    // spindle-color-tokens.css gets mode from this dataset
     const html = document.documentElement;
     html.dataset.colorScheme = this.mode;
     document.addEventListener('colorschemechange', () => {

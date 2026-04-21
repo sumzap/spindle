@@ -21,8 +21,8 @@
 <head>
   <meta name="color-scheme" content="light dark">
   <!-- テーマのスタイルを読み込むには3つの方法があります -->
-  <!-- Option 1: ameba-color-palette.cssを読み込み、その中で指定されているCSSカスタムプロパティを利用します -->
-  <link rel="stylesheet" href="https://unpkg.com/ameba-color-palette.css/ameba-color-palette.css">
+  <!-- Option 1: @sumzap/spindle-tokensのCSSを読み込み、その中で指定されているCSSカスタムプロパティを利用します -->
+  <link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-tokens/lib/spindle-color-tokens.css">
   <link rel="stylesheet" href="style.css">
   <!-- Option 2: <link media=""> を利用してそれぞれのテーマCSSを読み込みます -->
   <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">

@@ -4,11 +4,11 @@
  * @author: ericwbailey
  */
 
-/* NOTE: This CSS requires ameba-color-palette.css https://github.com/openameba/ameba-color-palette.css */
+/* NOTE: This CSS requires @sumzap/spindle-tokens https://github.com/sumzap/spindle */
 
 .hljs-comment,
 .hljs-quote {
-  color: var(--white-60-alpha);
+  color: var(--primitive-color-white-white-60-alpha);
 }
 
 .hljs-deletion,
@@ -19,7 +19,7 @@
 .hljs-tag,
 .hljs-template-variable,
 .hljs-variable {
-  color: var(--caution-red-vivid-100);
+  color: var(--primitive-color-caution-caution-red-vivid-100);
 }
 
 .hljs-built_in,
@@ -42,7 +42,7 @@
 .hljs-bullet,
 .hljs-string,
 .hljs-symbol {
-  color: var(--secondary-green-50);
+  color: var(--primitive-color-secondary-green-secondary-green-50);
 }
 
 .hljs-section,
@@ -62,7 +62,7 @@
    * - background: --gray-90
    */
   background: rgb(30, 41, 48);
-  color: var(--white-80-alpha);
+  color: var(--primitive-color-white-white-80-alpha);
   display: block;
   overflow-x: auto;
   padding: 0.5em;

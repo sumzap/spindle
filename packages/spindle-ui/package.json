@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@sumzap/spindle-hooks": "workspace:*",
-    "ameba-color-palette.css": "^4.17.0",
+    "@sumzap/spindle-tokens": "workspace:*",
     "use-callback-ref": "^1.3.3"
   },
   "devDependencies": {
