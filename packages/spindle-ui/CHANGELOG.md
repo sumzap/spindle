@@ -1,5 +1,12 @@
 # Change Log
 
+## 3.2.4
+
+### Patch Changes
+
+- Updated dependencies [[`d118107`](https://github.com/sumzap/spindle/commit/d1181075f4989dc90f234740bdb5863b22a27913)]:
+  - @sumzap/spindle-tokens@1.10.1
+
 ## 3.2.3
 
 ### Patch Changes
