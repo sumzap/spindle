@@ -21,8 +21,7 @@
     "directory": "packages/spindle-icons"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "devDependencies": {
     "@types/cli-progress": "3.11.6",
