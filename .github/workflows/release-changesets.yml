@@ -33,9 +33,6 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build spindle-hooks
-        run: pnpm --filter @sumzap/spindle-hooks build
-
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@6a0a831ff30acef54f2c6aa1cbbc1096b066edaf # v1.7.0
@@ -46,10 +43,22 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish to GitHub Packages with prepublishOnly
+      - name: Build packages for publish
+        if: steps.changesets.outputs.hasChangesets == 'false'
+        run: |
+          pnpm --filter @sumzap/spindle-hooks build
+          pnpm --filter @sumzap/spindle-tokens build
+          pnpm --filter @sumzap/spindle-tokens run cp
+          pnpm --filter @sumzap/spindle-ui build
+          pnpm --filter @sumzap/spindle-ui run cp
+          pnpm --filter @sumzap/spindle-mcp-server build
+          pnpm --filter @sumzap/spindle-theme-switch build
+          pnpm --filter @sumzap/spindle-syntax-themes run minify
+
+      - name: Publish to GitHub Packages
         if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
           npm config set "//npm.pkg.github.com/:_authToken" "${NODE_AUTH_TOKEN}"
-          npm_config_ignore_scripts=false pnpm changeset publish
+          pnpm changeset publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
