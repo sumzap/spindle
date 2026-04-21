@@ -15,7 +15,8 @@
     "directory": "packages/spindle-syntax-themes"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "test": "pnpm test:a11y",

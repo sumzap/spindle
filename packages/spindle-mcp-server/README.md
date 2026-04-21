@@ -10,7 +10,9 @@ MCPクライアントの設定をします。SpindleのMCPサーバーを利用�
 
 [Claude Code CLI](https://github.com/anthropics/claude-code)を使用する場合は、以下のコマンドで設定します。
 
-#### npxを使用する場合（npmに公開済みの場合）
+#### npxを使用する場合
+
+> **前提条件**: このパッケージは [GitHub Packages](https://github.com/orgs/sumzap/packages) で公開されています。事前に `.npmrc` への認証設定が必要です。詳細は[リポジトリのREADME](../../README.md#インストール)を参照してください。
 
 ```bash
 claude mcp add sumzap-spindle -- npx -y @sumzap/spindle-mcp-server@latest
@@ -45,7 +47,7 @@ claude mcp get sumzap-spindle
 
 [Cursor](https://www.cursor.com/)を使用する場合は、設定ファイルに以下を追加します。
 
-#### Cursorでnpxを使用する場合（npmに公開済みの場合）
+#### Cursorでnpxを使用する場合
 
 ```json
 {

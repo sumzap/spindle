@@ -13,6 +13,14 @@
 - [Spindle Theme Switch Example](https://sumzap-spindle-theme-switch.web.app/)
 - [blog.keiya01.dev](https://blog.keiya01.dev/) (拡張例は[Pull Request](https://github.com/keiya01/keiya01.dev/pull/7)で確認できます)
 
+## インストール
+
+> **注意**: このパッケージは [GitHub Packages](https://github.com/orgs/sumzap/packages) で公開されています。インストール前に `.npmrc` への認証設定が必要です。詳細は[リポジトリのREADME](../../README.md#インストール)を参照してください。
+
+```bash
+npm install @sumzap/spindle-theme-switch
+```
+
 ## Usage
 
 `<spindle-theme-switch>`を利用する方法は以下のサンプルコードを参考にしてください。

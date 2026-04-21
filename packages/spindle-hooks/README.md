@@ -12,6 +12,8 @@ Spindle Hooksは、Sumzapのデザインシステム「Spindle」で定義され
 
 ## インストール
 
+> **注意**: このパッケージは [GitHub Packages](https://github.com/orgs/sumzap/packages) で公開されています。インストール前に `.npmrc` への認証設定が必要です。詳細は[リポジトリのREADME](../../README.md#インストール)を参照してください。
+
 ```
 npm install @sumzap/spindle-hooks
 ```

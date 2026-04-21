@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      id-token: write # Needed for npm Trusted Publishing (OIDC)
+      packages: write # Needed for publishing to GitHub Packages
       pull-requests: write # Needed for creating pull requests
     steps:
       - name: Checkout Repo
@@ -27,12 +27,9 @@ jobs:
         uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
         with:
           node-version-file: package.json
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@sumzap'
           cache: pnpm
-
-      # Update npm (>=11.5.1 required for OIDC/provenance); install latest
-      - name: Update npm
-        run: npm install -g npm@latest
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
@@ -50,6 +47,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish to npm with prepublishOnly
+      - name: Publish to GitHub Packages with prepublishOnly
         if: steps.changesets.outputs.hasChangesets == 'false'
         run: npm_config_ignore_scripts=false pnpm changeset publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
