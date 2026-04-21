@@ -50,6 +50,6 @@ jobs:
         if: steps.changesets.outputs.hasChangesets == 'false'
         run: |
           npm config set "//npm.pkg.github.com/:_authToken" "${NODE_AUTH_TOKEN}"
-          npm_config_ignore_scripts=false pnpm changeset publish
+          npm_config_ignore_scripts=false npm_config_registry=https://registry.npmjs.org pnpm changeset publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
