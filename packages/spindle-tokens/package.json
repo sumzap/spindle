@@ -5,8 +5,7 @@
   "homepage": "https://github.com/sumzap/spindle#readme",
   "license": "MIT",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "style": "spindle-tokens.css",
   "files": [
