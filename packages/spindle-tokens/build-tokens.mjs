@@ -137,6 +137,11 @@ await new StyleDictionary({
   },
 }).buildAllPlatforms();
 
+// Bundle light + dark into sumzap-color-palette.css for drop-in use
+const lightCss = fs.readFileSync('dist/css/spindle-tokens-theme-light.css', 'utf8');
+const darkCss = fs.readFileSync('dist/css/spindle-tokens-theme-dark.css', 'utf8');
+fs.writeFileSync('dist/css/sumzap-color-palette.css', lightCss + '\n' + darkCss);
+
 // Spacing Mobile
 await new StyleDictionary({
   source: ['tokens/spacing-mobile.tokens.json'],

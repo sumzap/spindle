@@ -4,7 +4,7 @@
  * @author: ericwbailey
  */
 
-/* NOTE: This CSS requires @sumzap/spindle-tokens https://github.com/sumzap/spindle */
+/* NOTE: This CSS requires sumzap-color-palette.css from @sumzap/spindle-tokens */
 
 .hljs-comment,
 .hljs-quote {
