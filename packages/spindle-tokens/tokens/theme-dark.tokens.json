@@ -30,7 +30,7 @@
     },
     "Surface/Accent Secondary": {
       "$type": "color",
-      "$value": "{Primitive Color.Seconrady Green/Secondary Green 50}"
+      "$value": "{Primitive Color.Secondary Green/Secondary Green 50}"
     },
     "Surface/Accent Secondary Light": {
       "$type": "color",
@@ -82,7 +82,7 @@
     },
     "Text/Accent Secondary": {
       "$type": "color",
-      "$value": "{Primitive Color.Seconrady Green/Secondary Green 50}"
+      "$value": "{Primitive Color.Secondary Green/Secondary Green 50}"
     },
     "Text/High Emphasis on Inverse": {
       "$type": "color",
@@ -122,7 +122,7 @@
     },
     "Object/Accent Secondary": {
       "$type": "color",
-      "$value": "{Primitive Color.Seconrady Green/Secondary Green 40}"
+      "$value": "{Primitive Color.Secondary Green/Secondary Green 40}"
     },
     "Object/High Emphasis on Inverse": {
       "$type": "color",

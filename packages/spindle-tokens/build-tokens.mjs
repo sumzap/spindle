@@ -103,40 +103,44 @@ await new StyleDictionary({
 // Build each token set separately to avoid name collisions
 // (e.g., theme-light/dark both have "Color.Background/Base")
 
-// Theme colors will be enabled when migrating from ameba-color-palette.css
 // Theme Light
-// await new StyleDictionary({
-//   source: ['tokens/primitive-color.tokens.json', 'tokens/theme-light.tokens.json'],
-//   platforms: {
-//     css: {
-//       ...commonPlatform,
-//       files: [
-//         {
-//           destination: 'spindle-tokens-theme-light.css',
-//           format: 'css/variables',
-//           options: { outputReferences: true },
-//         },
-//       ],
-//     },
-//   },
-// }).buildAllPlatforms();
+await new StyleDictionary({
+  source: ['tokens/primitive-color.tokens.json', 'tokens/theme-light.tokens.json'],
+  platforms: {
+    css: {
+      ...commonPlatform,
+      files: [
+        {
+          destination: 'spindle-tokens-theme-light.css',
+          format: 'css/variables',
+          options: { outputReferences: true },
+        },
+      ],
+    },
+  },
+}).buildAllPlatforms();
 
-// // Theme Dark
-// await new StyleDictionary({
-//   source: ['tokens/primitive-color.tokens.json', 'tokens/theme-dark.tokens.json'],
-//   platforms: {
-//     css: {
-//       ...commonPlatform,
-//       files: [
-//         {
-//           destination: 'spindle-tokens-theme-dark.css',
-//           format: 'css/variables',
-//           options: { outputReferences: true },
-//         },
-//       ],
-//     },
-//   },
-// }).buildAllPlatforms();
+// Theme Dark
+await new StyleDictionary({
+  source: ['tokens/primitive-color.tokens.json', 'tokens/theme-dark.tokens.json'],
+  platforms: {
+    css: {
+      ...commonPlatform,
+      files: [
+        {
+          destination: 'spindle-tokens-theme-dark.css',
+          format: 'css/variables',
+          options: { outputReferences: true, selector: '[data-color-scheme="dark"]' },
+        },
+      ],
+    },
+  },
+}).buildAllPlatforms();
+
+// Bundle light + dark into sumzap-color-palette.css for drop-in use
+const lightCss = fs.readFileSync('dist/css/spindle-tokens-theme-light.css', 'utf8');
+const darkCss = fs.readFileSync('dist/css/spindle-tokens-theme-dark.css', 'utf8');
+fs.writeFileSync('dist/css/sumzap-color-palette.css', lightCss + '\n' + darkCss);
 
 // Spacing Mobile
 await new StyleDictionary({

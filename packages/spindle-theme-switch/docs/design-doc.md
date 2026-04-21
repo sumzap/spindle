@@ -1,6 +1,6 @@
 ## 前提 / Context
 
-Amebaでダークテーマを提供していくにあたり、テーマを切り替えるスイッチを定義しました。このリポジトリではそれを複数のWebサイトで使えるコンポーネントを作成します。なお、ライトテーマ・ダークテーマで利用するカラーパレットはCSS custom propertiesとしてameba-color-palette.cssに定義さているのでそれを利用する前提とします。
+ダークテーマを提供していくにあたり、テーマを切り替えるスイッチを定義しました。このリポジトリではそれを複数のWebサイトで使えるコンポーネントを作成します。なお、ライトテーマ・ダークテーマで利用するカラーパレットはCSS custom propertiesとして@sumzap/spindle-tokensに定義されているのでそれを利用する前提とします。
 
 ## 目指すこと / Goals
 
@@ -10,7 +10,7 @@ Amebaでダークテーマを提供していくにあたり、テーマを切り
 
 ## 目指さないこと / Non-goals
 
-- Amebaで利用する前提のため、カスタマイズの自由度が高いことを目指しません
+- Sumzapで利用する前提のため、カスタマイズの自由度が高いことを目指しません
 - テーマ切り替えはプラスアルファの機能であるため、すべてのブラウザで動作することを目指しません
 
 ## 概要 / Overview
@@ -21,7 +21,7 @@ Amebaでダークテーマを提供していくにあたり、テーマを切り
 - モダンブラウザでのテーマ提供を前提として、ES Moduleとして配信します
 - dark-mode-toggleのswitchはradioボタンで作成されているため、スクリーンリーダーでも適切に読み上げられます。複数の選択肢から選択するという意味でも問題はなさそうです
 
-また、すでに[Ameba Accessibility Guidelinesに導入されている](https://github.com/openameba/a11y-guidelines/pull/223)ので、それをベースに移植します。
+また、すでに[Sumzap Accessibility Guidelinesに導入されている](https://a11y-guidelines.sumzap.design/)ので、それをベースに移植します。
 
 ## どのようにやっていくか / Approach, Detailed design
 
@@ -50,7 +50,7 @@ export class SpindleThemeSwitch extends DarkModeToggle {
     ?.querySelector('[part=darkRadio]')
     ?.setAttribute('aria-label', 'ダークテーマ');
 
-    // ameba-color-palette.css gets mode from this dataset (data-color-scheme)
+    // spindle-color-tokens.css gets mode from this dataset (data-color-scheme)
     const html = document.documentElement;
     html.dataset.colorScheme = this.mode;
     document.addEventListener('colorschemechange', () => {
@@ -83,14 +83,14 @@ customElements.define(ELEMENT_NAME, SpindleThemeSwitch);
 
 ### 利用方法
 
-実際に利用する際はこんな感じです。Amebaのサービスで利用されている際にはameba-color-palette.cssが読み込まれていますが、それがなくても動作するように作成はします。
+実際に利用する際はこんな感じです。@sumzap/spindle-tokensが読み込まれていますが、それがなくても動作するように作成はします。
 
 ```html
 <head>
   <meta name="color-scheme" content="light dark">
   <!-- テーマのスタイルを読み込むには3つの方法があります -->
-  <!-- Option 1: ameba-color-palette.cssを読み込み、その中で指定されているCSSカスタムプロパティを利用します -->
-  <link rel="stylesheet" href="https://unpkg.com/ameba-color-palette.css/ameba-color-palette.css">
+  <!-- Option 1: @sumzap/spindle-tokensのCSSを読み込み、その中で指定されているCSSカスタムプロパティを利用します -->
+  <link rel="stylesheet" href="https://unpkg.com/@sumzap/spindle-tokens/lib/spindle-color-tokens.css">
   <link rel="stylesheet" href="style.css">
   <!-- Option 2: <link media=""> を利用してそれぞれのテーマCSSを読み込みます -->
   <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">
@@ -151,7 +151,7 @@ JSXでの利用時は以下のコメントを冒頭に挿入します。
 
 ### 自作
 
-Ameba Accessibility Guidelinesに導入する時は自作しましたが、要件的にdark-mode-toggleの拡張で不足がないので今回は自作しません。要件が追加された際には自作になるかもしれません。(自作の場合はAmeba Accessibility Guidelinesのものを流用で作れるには作れます)
+Sumzap Accessibility Guidelinesに導入する時は自作しましたが、要件的にdark-mode-toggleの拡張で不足がないので今回は自作しません。要件が追加された際には自作になるかもしれません。(自作の場合はSumzap Accessibility Guidelinesのものを流用で作れるには作れます)
 
 ### dark-mode-toggleをそのまま使う
 
