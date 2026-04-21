@@ -7,26 +7,46 @@
   --LinkButton-onFocus-outlineColor: var(--color-focus-clarity);
   --LinkButton--contained-backgroundColor: var(--color-surface-accent-primary);
   --LinkButton--contained-color: var(--color-text-high-emphasis-inverse);
-  --LinkButton--contained-onActive-backgroundColor: var(--color-active-contained-button);
-  --LinkButton--contained-onHover-backgroundColor: var(--color-hover-contained-button);
+  --LinkButton--contained-onActive-backgroundColor: var(
+    --color-active-contained-button
+  );
+  --LinkButton--contained-onHover-backgroundColor: var(
+    --color-hover-contained-button
+  );
   --LinkButton--outlined-borderColor: var(--color-border-accent-primary);
   --LinkButton--outlined-color: var(--color-text-accent-primary);
-  --LinkButton--outlined-onActive-backgroundColor: var(--color-active-outlined-button);
-  --LinkButton--outlined-onHover-backgroundColor: var(--color-hover-outlined-button);
+  --LinkButton--outlined-onActive-backgroundColor: var(
+    --color-active-outlined-button
+  );
+  --LinkButton--outlined-onHover-backgroundColor: var(
+    --color-hover-outlined-button
+  );
   --LinkButton--lighted-backgroundColor: var(
     --color-surface-accent-primary-light
   );
   --LinkButton--lighted-color: var(--color-text-accent-primary);
-  --LinkButton--lighted-onActive-backgroundColor: var(--color-active-lighted-button);
-  --LinkButton--lighted-onHover-backgroundColor: var(--color-hover-lighted-button);
+  --LinkButton--lighted-onActive-backgroundColor: var(
+    --color-active-lighted-button
+  );
+  --LinkButton--lighted-onHover-backgroundColor: var(
+    --color-hover-lighted-button
+  );
   --LinkButton--neutral-backgroundColor: var(--color-surface-tertiary);
   --LinkButton--neutral-color: var(--color-text-medium-emphasis);
-  --LinkButton--neutral-onActive-backgroundColor: var(--color-active-neutral-button);
-  --LinkButton--neutral-onHover-backgroundColor: var(--color-hover-neutral-button);
+  --LinkButton--neutral-onActive-backgroundColor: var(
+    --color-active-neutral-button
+  );
+  --LinkButton--neutral-onHover-backgroundColor: var(
+    --color-hover-neutral-button
+  );
   --LinkButton--danger-borderColor: var(--color-border-caution);
   --LinkButton--danger-color: var(--color-text-caution);
-  --LinkButton--danger-onActive-backgroundColor: var(--color-active-danger-button);
-  --LinkButton--danger-onHover-backgroundColor: var(--color-hover-danger-button);
+  --LinkButton--danger-onActive-backgroundColor: var(
+    --color-active-danger-button
+  );
+  --LinkButton--danger-onHover-backgroundColor: var(
+    --color-hover-danger-button
+  );
 }
 
 /*
