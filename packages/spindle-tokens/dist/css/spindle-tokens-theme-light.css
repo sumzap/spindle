@@ -205,8 +205,8 @@
   --color-surface-quaternary: var(--primitive-color-gray-gray-20-alpha);
   --color-surface-accent-primary: var(--primitive-color-brand-sumzap-yellow);
   --color-surface-accent-primary-light: var(--primitive-color-primary-yellow-primary-yellow-5);
-  --color-surface-accent-secondary: var(--primitive-color-secondary-green-secondary-green-50);
-  --color-surface-accent-secondary-light: var(--primitive-color-secondary-green-secondary-green-5);
+  --color-surface-accent-secondary: var(--primitive-color-primary-yellow-primary-yellow-50);
+  --color-surface-accent-secondary-light: var(--primitive-color-primary-yellow-primary-yellow-5);
   --color-surface-accent-neutral-high-emphasis: var(--primitive-color-gray-gray-80);
   --color-surface-accent-neutral-medium-emphasis: var(--primitive-color-gray-gray-60-alpha);
   --color-surface-positive: var(--primitive-color-primary-yellow-primary-yellow-70);
@@ -218,7 +218,7 @@
   --color-text-low-emphasis: var(--primitive-color-gray-gray-60-alpha);
   --color-text-disable: var(--primitive-color-gray-gray-30-alpha);
   --color-text-accent-primary: var(--primitive-color-brand-sumzap-yellow);
-  --color-text-accent-secondary: var(--primitive-color-secondary-green-secondary-green-80);
+  --color-text-accent-secondary: var(--primitive-color-primary-yellow-primary-yellow-80);
   --color-text-high-emphasis-on-inverse: var(--primitive-color-white-white-100);
   --color-text-high-emphasis-on-green: var(--primitive-color-white-white-100);
   --color-text-positive: var(--primitive-color-primary-yellow-primary-yellow-80);
@@ -228,7 +228,7 @@
   --color-object-low-emphasis: var(--primitive-color-gray-gray-60-alpha);
   --color-object-disable: var(--primitive-color-gray-gray-30-alpha);
   --color-object-accent-primary: var(--primitive-color-primary-yellow-primary-yellow-70);
-  --color-object-accent-secondary: var(--primitive-color-secondary-green-secondary-green-70);
+  --color-object-accent-secondary: var(--primitive-color-primary-yellow-primary-yellow-70);
   --color-object-high-emphasis-on-inverse: var(--primitive-color-white-white-100);
   --color-object-high-emphasis-on-green: var(--primitive-color-white-white-100);
   --color-object-positive: var(--primitive-color-primary-yellow-primary-yellow-70);
