@@ -34,7 +34,8 @@
     "directory": "packages/spindle-hooks"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "peerDependencies": {
     "@types/react": "^16.8.6 || ^17.0.0 || ^18.0.0|| ^19.0.0",

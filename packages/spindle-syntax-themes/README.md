@@ -16,6 +16,9 @@ Spindle Syntax Themesは、Spindleで定義された色を利用したコード�
 Spindle Syntax Themesを利用するには、npm経由で読み込む(推奨)もしくは、CDN経由で読み込む方法があります。現在は、Highlight.jsに対応しています。Highlight.jsの使い方は[公式サイト](https://highlightjs.org/)を参照してください。
 
 ## npm or pnpm
+
+> **注意**: このパッケージは [GitHub Packages](https://github.com/orgs/sumzap/packages) で公開されています。インストール前に `.npmrc` への認証設定が必要です。詳細は[リポジトリのREADME](../../README.md#インストール)を参照してください。
+
 ```
 npm install @sumzap/spindle-syntax-themes
 ```

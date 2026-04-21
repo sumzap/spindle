@@ -34,7 +34,8 @@
     "directory": "packages/spindle-mcp-server"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
   },
   "license": "SEE LICENSE IN README.md",
   "dependencies": {
