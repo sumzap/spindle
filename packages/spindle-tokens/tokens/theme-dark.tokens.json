@@ -92,6 +92,10 @@
       "$type": "color",
       "$value": "{Primitive Color.White/White 100}"
     },
+    "Text/High Emphasis on Accent Primary": {
+      "$type": "color",
+      "$value": "{Primitive Color.Gray/Gray 100}"
+    },
     "Text/Positive": {
       "$type": "color",
       "$value": "{Primitive Color.Primary Yellow/Primary Yellow 80}"
@@ -125,6 +129,10 @@
       "$value": "{Primitive Color.Primary Yellow/Primary Yellow 40}"
     },
     "Object/High Emphasis on Inverse": {
+      "$type": "color",
+      "$value": "{Primitive Color.Gray/Gray 100}"
+    },
+    "Object/High Emphasis on Accent Primary": {
       "$type": "color",
       "$value": "{Primitive Color.Gray/Gray 100}"
     },

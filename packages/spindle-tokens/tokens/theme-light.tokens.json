@@ -78,7 +78,7 @@
     },
     "Text/Accent Primary": {
       "$type": "color",
-      "$value": "{Primitive Color.Brand/Sumzap Yellow}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 100}"
     },
     "Text/Accent Secondary": {
       "$type": "color",
@@ -91,6 +91,10 @@
     "Text/High Emphasis on Green": {
       "$type": "color",
       "$value": "{Primitive Color.White/White 100}"
+    },
+    "Text/High Emphasis on Accent Primary": {
+      "$type": "color",
+      "$value": "{Primitive Color.Gray/Gray 100}"
     },
     "Text/Positive": {
       "$type": "color",
@@ -127,6 +131,10 @@
     "Object/High Emphasis on Inverse": {
       "$type": "color",
       "$value": "{Primitive Color.White/White 100}"
+    },
+    "Object/High Emphasis on Accent Primary": {
+      "$type": "color",
+      "$value": "{Primitive Color.Gray/Gray 100}"
     },
     "Object/High Emphasis on Green": {
       "$type": "color",
@@ -166,7 +174,7 @@
     },
     "Border/Accent Primary": {
       "$type": "color",
-      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 70}"
+      "$value": "{Primitive Color.Primary Yellow/Primary Yellow 100}"
     },
     "Border/High Emphasis on Inverse": {
       "$type": "color",

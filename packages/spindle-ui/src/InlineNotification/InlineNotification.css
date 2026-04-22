@@ -235,18 +235,18 @@
 
 .spui-InlineNotification--confirmation.spui-InlineNotification--emphasized
   .spui-InlineNotification-icon {
-  color: var(--color-object-high-emphasis-inverse);
+  color: var(--color-object-high-emphasis-on-accent-primary);
 }
 
 .spui-InlineNotification--confirmation.spui-InlineNotification--emphasized
   .spui-InlineNotification-text {
-  color: var(--color-text-high-emphasis-inverse);
+  color: var(--color-text-high-emphasis-on-accent-primary);
 }
 
 .spui-InlineNotification--confirmation.spui-InlineNotification--emphasized
   .spui-InlineNotification-textButton {
   /* stylelint-disable-next-line plugin/selector-bem-pattern */
-  --TextButton-color: var(--color-text-high-emphasis-inverse);
+  --TextButton-color: var(--color-text-high-emphasis-on-accent-primary);
 }
 
 .spui-InlineNotification--confirmation.spui-InlineNotification--emphasized

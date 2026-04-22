@@ -6,7 +6,9 @@
   --IconButton-tapHighlightColor: var(--color-tap-highlight-base);
   --IconButton-onFocus-outlineColor: var(--color-focus-clarity);
   --IconButton--contained-backgroundColor: var(--color-surface-accent-primary);
-  --IconButton--contained-color: var(--color-object-high-emphasis-inverse);
+  --IconButton--contained-color: var(
+    --color-object-high-emphasis-on-accent-primary
+  );
   --IconButton--contained-onActive-backgroundColor: var(
     --color-active-contained-button
   );

@@ -6,7 +6,7 @@
   --Button-tapHighlightColor: var(--gray-5-alpha);
   --Button-onFocus-outlineColor: var(--color-focus-clarity);
   --Button--contained-backgroundColor: var(--color-surface-accent-primary);
-  --Button--contained-color: var(--color-text-high-emphasis-inverse);
+  --Button--contained-color: var(--color-text-high-emphasis-on-accent-primary);
   --Button--contained-onActive-backgroundColor: var(
     --color-active-contained-button
   );

@@ -33,15 +33,12 @@
 
 .spui-ButtonSwitch-button[aria-pressed="true"] {
   background-color: var(--color-surface-accent-primary);
+  color: var(--color-text-high-emphasis-on-accent-primary);
   font-weight: bold;
 }
 
 .spui-ButtonSwitch-button[aria-pressed="true"] .spui-ButtonSwitch-icon {
-  color: var(--color-object-high-emphasis-inverse);
-}
-
-.spui-ButtonSwitch-button[aria-pressed="true"] .spui-ButtonSwitch-label {
-  color: var(--color-text-high-emphasis-inverse);
+  color: var(--color-object-high-emphasis-on-accent-primary);
 }
 
 .spui-ButtonSwitch-button[aria-pressed="true"]:hover {
