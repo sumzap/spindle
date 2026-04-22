@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.10.2
+
+### Patch Changes
+
+- [#20](https://github.com/sumzap/spindle/pull/20) [`709cc1a`](https://github.com/sumzap/spindle/commit/709cc1a5736d12a946ecd46e3ba62ab4e9d7d699) Thanks [@shiiman](https://github.com/shiiman)! - fix(spindle-tokens): light テーマの accent primary トークンを白背景で視認可能な primitive に修正
+
 ## 1.10.1
 
 ### Patch Changes
