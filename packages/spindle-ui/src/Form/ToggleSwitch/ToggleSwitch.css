@@ -29,6 +29,7 @@
 .spui-ToggleSwitch-visual {
   background-color: var(--color-surface-quaternary);
   border-radius: 16px;
+  box-shadow: inset 0 0 0 1.5px var(--color-border-medium-emphasis);
   box-sizing: border-box;
   display: inline-block;
   height: 100%;
@@ -43,8 +44,8 @@
 }
 
 .spui-ToggleSwitch-visual::before {
-  background-color: var(--color-object-high-emphasis-inverse);
-  border: solid 1px var(--color-border-low-emphasis);
+  background-color: var(--primitive-color-white-white-100);
+  border: solid 1px var(--color-border-high-emphasis);
   border-radius: 100%;
   box-sizing: border-box;
   content: "";
@@ -58,6 +59,7 @@
 }
 
 .spui-ToggleSwitch-input:checked ~ .spui-ToggleSwitch-visual::before {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   transform: translate(20px, 0);
 }
 
