@@ -221,6 +221,7 @@
   --color-text-accent-secondary: var(--primitive-color-brand-sumzap-yellow);
   --color-text-high-emphasis-on-inverse: var(--primitive-color-gray-gray-100);
   --color-text-high-emphasis-on-green: var(--primitive-color-white-white-100);
+  --color-text-high-emphasis-on-accent-primary: var(--primitive-color-gray-gray-100);
   --color-text-positive: var(--primitive-color-primary-yellow-primary-yellow-80);
   --color-text-caution: var(--primitive-color-caution-caution-red-vivid-100);
   --color-object-high-emphasis: var(--primitive-color-white-white-100);
@@ -230,6 +231,7 @@
   --color-object-accent-primary: var(--primitive-color-primary-yellow-primary-yellow-70);
   --color-object-accent-secondary: var(--primitive-color-primary-yellow-primary-yellow-40);
   --color-object-high-emphasis-on-inverse: var(--primitive-color-gray-gray-100);
+  --color-object-high-emphasis-on-accent-primary: var(--primitive-color-gray-gray-100);
   --color-object-high-emphasis-on-green: var(--primitive-color-white-white-100);
   --color-object-positive: var(--primitive-color-primary-yellow-primary-yellow-70);
   --color-object-caution: var(--primitive-color-caution-caution-red-vivid-100);

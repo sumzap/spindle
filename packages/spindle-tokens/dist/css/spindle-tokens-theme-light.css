@@ -217,10 +217,11 @@
   --color-text-medium-emphasis: var(--primitive-color-gray-gray-70-alpha);
   --color-text-low-emphasis: var(--primitive-color-gray-gray-60-alpha);
   --color-text-disable: var(--primitive-color-gray-gray-30-alpha);
-  --color-text-accent-primary: var(--primitive-color-brand-sumzap-yellow);
+  --color-text-accent-primary: var(--primitive-color-primary-yellow-primary-yellow-100);
   --color-text-accent-secondary: var(--primitive-color-primary-yellow-primary-yellow-80);
   --color-text-high-emphasis-on-inverse: var(--primitive-color-white-white-100);
   --color-text-high-emphasis-on-green: var(--primitive-color-white-white-100);
+  --color-text-high-emphasis-on-accent-primary: var(--primitive-color-gray-gray-100);
   --color-text-positive: var(--primitive-color-primary-yellow-primary-yellow-80);
   --color-text-caution: var(--primitive-color-caution-caution-red-100);
   --color-object-high-emphasis: var(--primitive-color-gray-gray-100);
@@ -230,6 +231,7 @@
   --color-object-accent-primary: var(--primitive-color-primary-yellow-primary-yellow-70);
   --color-object-accent-secondary: var(--primitive-color-primary-yellow-primary-yellow-70);
   --color-object-high-emphasis-on-inverse: var(--primitive-color-white-white-100);
+  --color-object-high-emphasis-on-accent-primary: var(--primitive-color-gray-gray-100);
   --color-object-high-emphasis-on-green: var(--primitive-color-white-white-100);
   --color-object-positive: var(--primitive-color-primary-yellow-primary-yellow-70);
   --color-object-caution: var(--primitive-color-caution-caution-red-100);
@@ -239,7 +241,7 @@
   --color-border-medium-emphasis: var(--primitive-color-gray-gray-30-alpha);
   --color-border-low-emphasis: var(--primitive-color-gray-gray-10-alpha);
   --color-border-strong-emphasis: var(--primitive-color-gray-gray-100);
-  --color-border-accent-primary: var(--primitive-color-primary-yellow-primary-yellow-70);
+  --color-border-accent-primary: var(--primitive-color-primary-yellow-primary-yellow-100);
   --color-border-high-emphasis-on-inverse: var(--primitive-color-white-white-100);
   --color-border-low-emphasis-on-inverse: var(--primitive-color-white-white-20-alpha);
   --color-border-high-emphasis-on-green: var(--primitive-color-white-white-100);
