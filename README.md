@@ -28,6 +28,28 @@ Spindleの各パッケージは[GitHub Packages](https://github.com/orgs/sumzap/
 
 `YOUR_GITHUB_TOKEN` は `read:packages` スコープを持つ [GitHub Personal Access Token](https://github.com/settings/tokens) に置き換えてください。CI 環境では `GITHUB_TOKEN` をそのまま利用できます。
 
+#### 他リポジトリの CI（GitHub Actions）からのアクセス
+
+デフォルトの `GITHUB_TOKEN` は発行元リポジトリに対してのみ `read:packages` を持ちます。そのため、**sumzap Organization 内の別リポジトリ**の GitHub Actions から Spindle パッケージをインストールするには、Organization 管理者による一度の設定が必要です。
+
+以下の各パッケージ設定ページで操作を行います：
+
+| パッケージ | 設定ページ |
+| --- | --- |
+| `@sumzap/spindle-ui` | <https://github.com/orgs/sumzap/packages/npm/spindle-ui/settings> |
+| `@sumzap/spindle-tokens` | <https://github.com/orgs/sumzap/packages/npm/spindle-tokens/settings> |
+| `@sumzap/spindle-hooks` | <https://github.com/orgs/sumzap/packages/npm/spindle-hooks/settings> |
+| `@sumzap/spindle-mcp-server` | <https://github.com/orgs/sumzap/packages/npm/spindle-mcp-server/settings> |
+
+各ページで：
+
+1. 「Manage Actions access」セクションの **「Add Repository」** をクリック
+2. アクセスを許可したいリポジトリ（例: `sumzap/ai-app`）を検索して追加
+3. ロールを **「Read」** に設定
+4. 「Save」
+
+設定後は、対象リポジトリの CI で `GITHUB_TOKEN`（デフォルト）を使って認証できるようになります。
+
 ### パッケージのインストール
 
 認証設定後、通常通りインストールできます。
