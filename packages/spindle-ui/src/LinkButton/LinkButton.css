@@ -6,7 +6,9 @@
   --LinkButton-tapHighlightColor: var(--color-tap-highlight-base);
   --LinkButton-onFocus-outlineColor: var(--color-focus-clarity);
   --LinkButton--contained-backgroundColor: var(--color-surface-accent-primary);
-  --LinkButton--contained-color: var(--color-text-high-emphasis-on-accent-primary);
+  --LinkButton--contained-color: var(
+    --color-text-high-emphasis-on-accent-primary
+  );
   --LinkButton--contained-onActive-backgroundColor: var(
     --color-active-contained-button
   );
