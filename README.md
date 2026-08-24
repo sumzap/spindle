@@ -19,36 +19,36 @@ Spindleの各パッケージは[GitHub Packages](https://github.com/orgs/sumzap/
 
 ### 認証設定
 
-プロジェクトルートまたはホームディレクトリの `.npmrc` に以下を追加します。
+プロジェクトルートまたはホームディレクトリの `.npmrc` に以下を追加します。トークンは環境変数から渡すため、`.npmrc` に直接書き込む必要はありません。
 
 ```
 @sumzap:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
+//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
 ```
 
-`YOUR_GITHUB_TOKEN` は `read:packages` スコープを持つ [GitHub Personal Access Token](https://github.com/settings/tokens) に置き換えてください。CI 環境では `GITHUB_TOKEN` をそのまま利用できます。
+各パッケージは public として公開しているため、Organization を問わず利用できます。ただし GitHub Packages の npm レジストリは public パッケージでも未認証アクセスを許可していないため、トークンの設定自体は必須です。
 
-#### 他リポジトリの CI（GitHub Actions）からのアクセス
+#### ローカル環境
 
-デフォルトの `GITHUB_TOKEN` は発行元リポジトリに対してのみ `read:packages` を持ちます。そのため、**sumzap Organization 内の別リポジトリ**の GitHub Actions から Spindle パッケージをインストールするには、Organization 管理者による一度の設定が必要です。
+[GitHub CLI](https://cli.github.com/) のトークンを利用します。personal access token を発行する必要はありません。
 
-以下の各パッケージ設定ページで操作を行います：
+```bash
+export NODE_AUTH_TOKEN=$(gh auth token)
+```
 
-| パッケージ | 設定ページ |
-| --- | --- |
-| `@sumzap/spindle-ui` | <https://github.com/orgs/sumzap/packages/npm/spindle-ui/settings> |
-| `@sumzap/spindle-tokens` | <https://github.com/orgs/sumzap/packages/npm/spindle-tokens/settings> |
-| `@sumzap/spindle-hooks` | <https://github.com/orgs/sumzap/packages/npm/spindle-hooks/settings> |
-| `@sumzap/spindle-mcp-server` | <https://github.com/orgs/sumzap/packages/npm/spindle-mcp-server/settings> |
+GitHub Packages の npm レジストリは fine-grained personal access token に対応しておらず、personal access token による認証は classic token に限られます。GitHub CLI が発行するのは OAuth token（`gho_`）のため、personal access token を発行せずに認証できます。
 
-各ページで：
+#### CI（GitHub Actions）
 
-1. 「Manage Actions access」セクションの **「Add Repository」** をクリック
-2. アクセスを許可したいリポジトリ（例: `sumzap/ai-app`）を検索して追加
-3. ロールを **「Read」** に設定
-4. 「Save」
+`.npmrc` をリポジトリに配置し、`NODE_AUTH_TOKEN` にデフォルトの `GITHUB_TOKEN` を渡します。personal access token は不要です。
 
-設定後は、対象リポジトリの CI で `GITHUB_TOKEN`（デフォルト）を使って認証できるようになります。
+```yaml
+- run: pnpm install
+  env:
+    NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+別 Organization のリポジトリからでも認証できます。
 
 ### パッケージのインストール
 
