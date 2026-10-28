@@ -1,2 +1,7 @@
 dist/
 public/
+
+# 配布用に生成されたCSSは検査せず、srcのCSSを検査する
+index.css
+*/**/*.css
+!src/**/*.css
