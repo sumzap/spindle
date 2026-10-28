@@ -1,2 +1,8 @@
 **/dist/
 packages/spindle-mcp-server/assets/
+
+# 配布用に生成されたCSSは検査せず、srcのCSSを検査する
+packages/spindle-ui/index.css
+packages/spindle-ui/*/**/*.css
+!packages/spindle-ui/src/**/*.css
+packages/spindle-ui/public/

@@ -60,6 +60,13 @@ npm install @sumzap/spindle-ui
 pnpm add @sumzap/spindle-ui
 ```
 
+## 開発環境のNode.js
+
+CIは `.node-version` のNode.js 22.23.4を使用します。ローカルでもこの版に合わせ、
+`node --version` を確認してから `pnpm install --frozen-lockfile` を実行してください。
+22・24・26系の別の版を使う場合は、`package.json` の `engines.node` に記載した修正版以降が必要です。
+Node.jsを更新するときは、CIの固定版と開発環境の許容範囲を併せて見直してください。
+
 ## License
 
 Spindle is licensed under MIT License, but Icon files in [Spindle Icons](https://github.com/sumzap/spindle/tree/main/packages/spindle-icons#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9) and [Spindle UI](https://github.com/sumzap/spindle/tree/main/packages/spindle-ui#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9) are licensed under Creative Commons BY-NC-ND 4.0.
