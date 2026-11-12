@@ -62,9 +62,10 @@ pnpm add @sumzap/spindle-ui
 
 ## 開発環境のNode.js
 
-CIは `.node-version` のNode.js 22.23.4を使用します。ローカルでもこの版に合わせ、
+CIは `.node-version` のNode.js 22.23.5を使用します。ローカルでもこの版に合わせ、
 `node --version` を確認してから `pnpm install --frozen-lockfile` を実行してください。
 22・24・26系の別の版を使う場合は、`package.json` の `engines.node` に記載した修正版以降が必要です。
+2026年11月の[Node.jsセキュリティ更新](https://nodejs.org/en/blog/vulnerability/november-2026-security-releases)に合わせ、22系は22.23.5、24系は24.22.3、26系は26.13.1以上を使用してください。
 Node.jsを更新するときは、CIの固定版と開発環境の許容範囲を併せて見直してください。
 
 ## License
